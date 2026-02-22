@@ -19,18 +19,20 @@
 				align-items: center; 
 				gap: 8px; 
 				padding: 0.6em 1.2em; 
-				border: 1px solid rgba(255, 255, 255, 0.35); 
+				border: 2px solid #fff; 
 				border-radius: 4px; 
-				color: rgba(255, 255, 255, 0.85); 
+				color: #fff; 
 				font-size: 0.9rem; 
+				font-weight: 600;
 				text-decoration: none; 
 				transition: all 0.3s ease; 
+				background: rgba(255, 255, 255, 0.1);
 			}
 			.social-links li a i { font-size: 1.2rem; }
-			.social-links li a:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.5); color: #fff; }
-			.social-links li a.linkedin:hover { border-color: #0077b5; color: #0077b5; }
-			.social-links li a.github:hover { border-color: #6e5494; color: #a78bfa; }
-			.social-links li a.tableau:hover { border-color: #e97627; color: #e97627; }
+			.social-links li a:hover { background: rgba(255, 255, 255, 0.25); }
+			.social-links li a.linkedin:hover { border-color: #0077b5; color: #0077b5; background: rgba(0, 119, 181, 0.15); }
+			.social-links li a.github:hover { border-color: #a78bfa; color: #a78bfa; background: rgba(167, 139, 250, 0.15); }
+			.social-links li a.tableau:hover { border-color: #e97627; color: #e97627; background: rgba(233, 118, 39, 0.15); }
 			@media screen and (max-width: 736px) {
 				.social-links { justify-content: center; }
 			}
