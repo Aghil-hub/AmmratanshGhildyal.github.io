@@ -13,11 +13,26 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			.social-icons { list-style: none; display: flex; gap: 20px; padding: 0; margin-top: 1.5em; }
-			.social-icons a { color: rgba(255, 255, 255, 0.65); font-size: 1.8rem; transition: color 0.3s; }
-			.social-icons a:hover { color: #0077b5; }
+			.social-links { list-style: none; display: flex; flex-wrap: wrap; gap: 15px; padding: 0; margin-top: 1.5em; }
+			.social-links li a { 
+				display: inline-flex; 
+				align-items: center; 
+				gap: 8px; 
+				padding: 0.6em 1.2em; 
+				border: 1px solid rgba(255, 255, 255, 0.35); 
+				border-radius: 4px; 
+				color: rgba(255, 255, 255, 0.85); 
+				font-size: 0.9rem; 
+				text-decoration: none; 
+				transition: all 0.3s ease; 
+			}
+			.social-links li a i { font-size: 1.2rem; }
+			.social-links li a:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.5); color: #fff; }
+			.social-links li a.linkedin:hover { border-color: #0077b5; color: #0077b5; }
+			.social-links li a.github:hover { border-color: #6e5494; color: #a78bfa; }
+			.social-links li a.tableau:hover { border-color: #e97627; color: #e97627; }
 			@media screen and (max-width: 736px) {
-				.social-icons { justify-content: center; }
+				.social-links { justify-content: center; }
 			}
 		</style>
 	</head>
@@ -53,10 +68,10 @@
 											<h2>About Me</h2>
 										</header>
 										<p>Data-driven problem solver with 7+ years of experience combining analytics, storytelling, and business acumen to drive smarter business decisions.</p>
-										<ul class="social-icons">
-											<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-											<li><a href="https://github.com/Aghil-hub" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
-											<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" target="_blank" title="Tableau Public"><i class="fas fa-chart-bar"></i></a></li>
+										<ul class="social-links">
+											<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+											<li><a href="https://github.com/Aghil-hub" target="_blank" class="github"><i class="fab fa-github"></i> GitHub</a></li>
+											<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" target="_blank" class="tableau"><i class="fas fa-chart-bar"></i> Tableau</a></li>
 										</ul>
 									</div>
 									<span class="image"><img src="images/MyImage.jpg" alt="Ammratansh Ghildyal" /></span>
