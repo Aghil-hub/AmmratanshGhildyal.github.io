@@ -12,6 +12,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#footer .icons { display: flex; justify-content: center; align-items: center; gap: 2em; }
+			#footer .icons li { padding: 0; }
+			#footer .tableau-logo { width: 1.5em; height: 1.5em; vertical-align: middle; filter: brightness(0) invert(1); opacity: 0.85; transition: opacity 0.25s ease; }
+			#footer .icons a:hover .tableau-logo { opacity: 1; }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -44,11 +50,6 @@
 											<h2>About Me</h2>
 										</header>
 										<p>Data-driven problem solver with 7+ years of experience combining analytics, storytelling, and business acumen to drive smarter business decisions.</p>
-										<ul class="actions">
-											<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" target="_blank" class="button">LinkedIn</a></li>
-											<li><a href="https://github.com/Aghil-hub" target="_blank" class="button">GitHub</a></li>
-											<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" target="_blank" class="button">Tableau</a></li>
-										</ul>
 									</div>
 									<span class="image"><img src="images/MyImage.jpg" alt="Ammratansh Ghildyal" /></span>
 								</div>
@@ -148,13 +149,11 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section class="special">
-							<ul class="icons" style="justify-content: center;">
-								<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/Aghil-hub" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" target="_blank" class="icon solid fa-chart-bar alt"><span class="label">Tableau</span></a></li>
-							</ul>
-						</section>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Aghil-hub" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" target="_blank" class="alt"><img src="images/Tableau_logo.png" alt="Tableau" class="tableau-logo" /></a></li>
+						</ul>
 						<p class="copyright">&copy; Ammratansh Ghildyal. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
