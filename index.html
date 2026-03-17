@@ -14,13 +14,13 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			#footer { text-align: center; }
-			                #header.alt p { margin-bottom: 0 !important; }
-                #header.alt h1 { margin-top: 0 !important; }
-			        .career-icon { display: none; }
-			.social-boxes { 
-				display: flex; 
-				justify-content: center; 
-				gap: 1.5em; 
+			#header.alt p { margin-bottom: 0 !important; }
+			#header.alt h1 { margin-top: 0 !important; }
+			.career-icon { display: none; }
+			.social-boxes {
+				display: flex;
+				justify-content: center;
+				gap: 1.5em;
 				flex-wrap: wrap;
 				list-style: none;
 				padding: 0;
@@ -46,7 +46,29 @@
 			.social-boxes li a i {
 				font-size: 1.3em;
 			}
-
+			
+			/* Career Journey Styling */
+			.career-timeline {
+				max-width: 900px;
+				margin: 3em auto;
+				padding: 0 2em;
+			}
+			.career-card {
+				margin-bottom: 2.5em;
+				text-align: left;
+			}
+			.career-content h3 {
+				margin-bottom: 0.3em;
+			}
+			.career-company {
+				color: rgba(255, 255, 255, 0.7);
+				font-style: italic;
+				margin-bottom: 0.5em;
+			}
+			.career-summary {
+				color: rgba(255, 255, 255, 0.8);
+				line-height: 1.6;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -58,19 +80,22 @@
 					<header id="header" class="alt">
 						<p>Hi, I am</p>
 						<h1><strong>Ammratansh Ghildyal</strong></h1>
-				<ul class="social-boxes">
-					<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-					<li><a href="https://github.com/Aghil-hub" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-					<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" target="_blank"><i class="fas fa-chart-bar"></i> Tableau</a></li>
-				</ul>
-			</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#intro" class="active">About</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
+						<ul class="social-boxes">
+							<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+							<li><a href="https://github.com/Aghil-hub" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+							<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" target="_blank"><i class="fas fa-chart-bar"></i> Tableau</a></li>
+						</ul>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
 				<!-- Main -->
 					<div id="main">
 
@@ -81,13 +106,49 @@
 										<header class="major">
 											<h2>About Me</h2>
 										</header>
-										<p>I am a data-driven problem solver with 7+ years of experience combining analytics, storytelling, and business acumen to drive smarter business decisions. 
-											I began my journey in consulting and decision science, working for Fortune 500 clients across insurance, retail and financial services industries. I then
-											moved into banking, leading analytics for digital products and platforms for one of the largest private sector bank in India. I strive to constantly keep 
-											learning and therefore I am currently finishing MS in Business Analytics at the University of Illinois, Urbana-Champaign. 
+										<p>I am a data-driven problem solver with 7+ years of experience combining analytics, storytelling, and business acumen to drive smarter business decisions. I began my career in consulting and decision science, working with Fortune 500 clients across insurance, retail, and financial services industries. I then moved into banking, leading analytics for digital products and platforms at one of the largest private sector banks in India. I strive to constantly keep learning and am currently completing an MS in Business Analytics at the University of Illinois Urbana-Champaign.
 										</p>
 									</div>
 									<span class="image"><img src="images/MyImage.jpg" alt="Ammratansh Ghildyal" /></span>
+								</div>
+								
+								<!-- Career Journey Section -->
+								<div class="career-timeline">
+									<header class="major" style="text-align: center; margin-top: 3em;">
+										<h2>Career Journey</h2>
+									</header>
+									
+									<article class="career-card">
+										<div class="career-content">
+											<h3>Master of Science in Business Analytics</h3>
+											<p class="career-company">University of Illinois Urbana-Champaign · Aug 2025 – May 2026</p>
+											<p class="career-summary">Deepening expertise in advanced analytics, experimentation, and product-focused decision-making.</p>
+										</div>
+									</article>
+
+									<article class="career-card">
+										<div class="career-content">
+											<h3>Senior Manager, Business Intelligence Unit – Digital Business & Transformation</h3>
+											<p class="career-company">Axis Bank · Oct 2022 – Jun 2025</p>
+											<p class="career-summary">Led analytics for digital current account products and platforms, driving growth, conversion, and operational efficiency.</p>
+										</div>
+									</article>
+
+									<article class="career-card">
+										<div class="career-content">
+											<h3>Senior Consultant, Business Consulting</h3>
+											<p class="career-company">Ernst & Young · Nov 2020 – Oct 2022</p>
+											<p class="career-summary">Drove analytics engagements for financial services clients across marketing, operations, and risk initiatives.</p>
+										</div>
+									</article>
+
+									<article class="career-card">
+										<div class="career-content">
+											<h3>Decision Scientist</h3>
+											<p class="career-company">Mu Sigma · Aug 2017 – Nov 2020</p>
+											<p class="career-summary">Built data-driven decision frameworks for Fortune 500 clients in insurance and retail domains.</p>
+										</div>
+									</article>
 								</div>
 							</section>
 
@@ -120,79 +181,7 @@
 								</footer>
 							</section>
 
-						<!-- Career Journey Timeline -->
-							<section id="career-journey">
-								
-								<h2>Career Journey</h2>
-								
-								<div class="career-timeline">
-								
-								  <article class="career-card">
-									<div class="career-icon">
-									  <i class="fas fa-graduation-cap"></i>
-									</div>
-									<div class="career-content">
-									  <h3>Master of Science in Business Analytics</h3>
-									  <p class="career-company">
-										University of Illinois Urbana-Champaign · Aug 2025 – May 2026
-									  </p>
-									  <p class="career-summary">
-										Deepening expertise in advanced analytics, experimentation, and product-focused decision-making.
-									  </p>
-									</div>
-								  </article>
-	
-								  <article class="career-card">
-								    <div class="career-icon">
-								      <i class="fas fa-briefcase"></i>
-								    </div>
-								    <div class="career-content">
-								      <h3>Senior Manager, Business Intelligence Unit – Digital Business & Transformation</h3>
-								      <p class="career-company">
-								        Axis Bank · Oct 2022 – Jun 2025
-								      </p>
-								      <p class="career-summary">
-								        Led analytics for digital current account products and platforms, driving growth, conversion, and operational efficiency.
-								      </p>
-								    </div>
-								  </article>
-								
-								  <article class="career-card">
-								    <div class="career-icon">
-								      <i class="fas fa-chart-line"></i>
-								    </div>
-								    <div class="career-content">
-								      <h3>Senior Consultant, Business Consulting</h3>
-								      <p class="career-company">
-								        Ernst &amp; Young · Nov 2020 – Oct 2022
-								      </p>
-								      <p class="career-summary">
-								        Drove analytics engagements for financial services clients across marketing, operations, and risk initiatives.
-								      </p>
-								    </div>
-								  </article>
-								
-								  <article class="career-card">
-								    <div class="career-icon">
-								      <i class="fas fa-database"></i>
-								    </div>
-								    <div class="career-content">
-								      <h3>Decision Scientist</h3>
-								      <p class="career-company">
-								        Mu Sigma · Aug 2017 – Nov 2020
-								      </p>
-								      <p class="career-summary">
-								        Built data-driven decision frameworks for Fortune 500 clients in insurance and retail domains.
-								      </p>
-								    </div>
-								  </article>
-								
-								</div>
-							</section>
-
-
-
-						<!-- Second Section -->
+						<!-- Second Section (Placeholder) -->
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Ipsum consequat</h2>
@@ -229,12 +218,12 @@
 								</footer>
 							</section>
 
-						<!-- Contact Section -->
+						<!-- Contact -->
 							<section id="contact" class="main special">
 								<header class="major">
 									<h2>Contact Me</h2>
 								</header>
-								<form method="POST" action="https://formspree.io/f/maqdppvz">
+								<form method="post" action="https://formspree.io/f/xpwzdpwk">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
 											<input type="email" name="_replyto" id="email" placeholder="Your Email" required />
@@ -243,13 +232,14 @@
 											<input type="text" name="_subject" id="subject" placeholder="Subject" />
 										</div>
 										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="6" required></textarea>
+											<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions special">
+												<li><input type="submit" value="Send Message" class="primary" /></li>
+											</ul>
 										</div>
 									</div>
-									<br />
-									<ul class="actions special">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-									</ul>
 								</form>
 							</section>
 
@@ -257,7 +247,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-
+						
 						<p class="copyright">&copy; Ammratansh Ghildyal. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
