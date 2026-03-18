@@ -4023,10 +4023,10 @@ input, select, textarea {
 }
 
 #projects .projects-grid {
-  max-width: 72rem;
+  max-width: 52rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
   align-items: stretch;
 }
@@ -4037,6 +4037,14 @@ input, select, textarea {
   padding: 2rem 1.75rem;
   box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.18);
   text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+#projects .project-card:hover {
+  transform: translateY(-0.35rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.22);
+  border-color: rgba(63, 88, 122, 0.22);
 }
 
 #projects .project-card__heading {
@@ -4088,15 +4096,16 @@ input, select, textarea {
 }
 
 #projects .project-item__action {
-  justify-self: end;
-  align-self: start;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Stack cards on smaller screens */
 @media screen and (max-width: 980px) {
   #projects .projects-grid {
-    grid-template-columns: 1fr;
-    max-width: 40rem;
+    max-width: 100%;
   }
 }
 
@@ -4109,7 +4118,7 @@ input, select, textarea {
 
   #projects .project-item__action {
     grid-column: 2 / 3;
-    justify-self: flex-start;
+    justify-self: center;
     margin-top: 0.5rem;
   }
 }
