@@ -2711,6 +2711,147 @@ input, select, textarea {
 		background-color: rgba(255, 255, 255, 0.35);
 	}
 
+	section.main {
+		padding: 5em 5em 3em 5em;
+		background-color: var(--bg-alt);
+		color: rgba(255, 255, 255, 0.78);
+		border-top: solid 1px rgba(255, 255, 255, 0.08);
+	}
+
+		section.main:first-of-type {
+			border-top: 0;
+		}
+
+	section.main.special {
+		text-align: center;
+	}
+
+	section.main input,
+	section.main select,
+	section.main textarea,
+	section.main h1,
+	section.main h2,
+	section.main h3,
+	section.main h4,
+	section.main h5,
+	section.main h6,
+	section.main strong,
+	section.main b {
+		color: #ffffff;
+	}
+
+	section.main a:hover {
+		color: #a9c1ff;
+	}
+
+	section.main .button {
+		color: #ffffff !important;
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+	}
+
+		section.main .button:hover {
+			background-color: rgba(255, 255, 255, 0.08);
+		}
+
+	section.hero {
+		background-color: var(--bg);
+		text-align: center;
+		padding: 6rem 2rem 4rem 2rem;
+		border-top: 0;
+	}
+
+	section.hero .major p {
+		margin: 0 0 0.75rem 0;
+		font-size: 1.1rem;
+		opacity: 0.85;
+	}
+
+	section.hero .major h1 {
+		margin: 0;
+		font-size: 3rem;
+	}
+
+	.hero-actions {
+		list-style: none;
+		margin: 2rem 0 0 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.hero-actions li {
+		margin: 0;
+	}
+
+	.career-journey {
+		max-width: 720px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.career-entry {
+		padding: 1.25rem 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	}
+
+		.career-entry:last-child {
+			border-bottom: none;
+		}
+
+	.career-entry h3 {
+		margin: 0 0 0.35rem 0;
+	}
+
+	.career-entry p {
+		margin: 0.2rem 0;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		section.main {
+			padding: 4em 4em 2em 4em;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		section.main {
+			padding: 4em 3em 2em 3em;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		section.main {
+			padding: 3em 2em 1em 2em;
+		}
+
+		section.hero {
+			padding: 4em 2em 2.5em 2em;
+		}
+
+		section.hero .major h1 {
+			font-size: 2.4rem;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		section.main {
+			padding: 3em 1.5em 1em 1.5em;
+		}
+
+		section.hero {
+			padding: 3.5em 1.5em 2em 1.5em;
+		}
+
+	}
+
 /* Table */
 
 	.table-wrapper {
@@ -3080,21 +3221,6 @@ input, select, textarea {
 	#header {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
-		background-color: var(--bg);
-		background-image: none;
-	}
-
-	#header,
-	#intro,
-	#banner {
-		background-color: var(--bg);
-		background-image: none;
-	}
-
-	#header:before,
-	#intro:before,
-	#banner:before {
-		background: none;
 	}
 
 		#header h1 {
