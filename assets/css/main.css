@@ -3481,7 +3481,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #f5f5f5;
 		color: #636363;
 		border-radius: 0.25em;
 	}
@@ -3729,6 +3729,7 @@ input, select, textarea {
 
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
+			background-color: #f5f5f5;
 			border-top: solid 1px #dddddd;
 		}
 
