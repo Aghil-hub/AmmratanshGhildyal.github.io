@@ -4016,7 +4016,12 @@ input, select, textarea {
   }
 }
 
-/* Projects section: two cards, responsive */
+/* Projects section: layout and alignment */
+#projects .inner {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
 #projects .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4037,10 +4042,12 @@ input, select, textarea {
   box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
 }
 
+/* Make sure headings match overall style */
 .project-card__heading {
   margin: 0 0 1.5rem 0;
 }
 
+/* Project list inside each card */
 .project-card__list {
   display: flex;
   flex-direction: column;
@@ -4050,9 +4057,30 @@ input, select, textarea {
 .project-item {
   padding-top: 0.9rem;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  align-items: center;
+}
+
+/* Number circle for each project */
+.project-item__number {
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+/* Title + description */
+.project-item__text {
+  min-width: 0;
 }
 
 .project-item__title {
@@ -4066,24 +4094,26 @@ input, select, textarea {
   opacity: 0.9;
 }
 
+/* Button area */
 .project-item__action {
-  margin-top: 0.25rem;
+  justify-self: end;
 }
 
-/* Align text + button on wider screens */
-@media screen and (min-width: 736px) {
+/* Responsive tweak: stack text and button on narrow screens */
+@media screen and (max-width: 736px) {
   .project-item {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
   }
 
-  .project-item__text {
-    max-width: 70%;
+  .project-item__action {
+    grid-column: 2 / 3;
+    justify-self: flex-start;
+    margin-top: 0.5rem;
   }
 }
 
-/* Slightly smaller button for project links, reusing existing .button styles */
+/* Reuse existing button style, just a bit smaller */
 #projects .button.small {
   font-size: 0.85em;
   padding: 0.4rem 0.9rem;
