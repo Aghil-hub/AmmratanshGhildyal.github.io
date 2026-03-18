@@ -4180,22 +4180,30 @@ input, select, textarea {
 #skills .skill-card__icon {
   width: 3rem;
   height: 3rem;
-  margin: 0 0 1rem 0;
   border-radius: 0.9rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(63, 88, 122, 0.16), rgba(98, 119, 146, 0.22));
   color: #3f587a;
+  flex-shrink: 0;
 }
 
 #skills .skill-card__icon .icon:before {
   font-size: 1.1rem;
 }
 
-#skills .skill-card h3 {
+#skills .skill-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
   margin: 0 0 1rem 0;
-  font-size: 1.15rem;
+}
+
+#skills .skill-card h3 {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 700;
   line-height: 1.35;
 }
 
@@ -4228,6 +4236,11 @@ input, select, textarea {
 @media screen and (max-width: 736px) {
   #skills .skill-card {
     padding: 1.35rem 1.15rem 1.2rem 1.15rem;
+  }
+
+  #skills .skill-card__header {
+    gap: 0.8rem;
+    align-items: flex-start;
   }
 
   #skills .skill-pill-list li {
