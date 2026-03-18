@@ -46,12 +46,16 @@
 			.social-boxes li a i {
 				font-size: 1.3em;
 			}
-			
+
 			/* Career Journey Styling */
 			.career-timeline {
 				max-width: 900px;
 				margin: 3em auto;
 				padding: 0 2em;
+			}
+			.career-section-header h2:after {
+				margin-left: auto;
+				margin-right: auto;
 			}
 			.career-card {
 				margin-bottom: 2.5em;
@@ -67,6 +71,16 @@
 			}
 			.career-summary {
 				color: rgba(255, 255, 255, 0.8);
+				line-height: 1.6;
+			}
+			.career-highlights {
+				margin: 0.75em 0 0 1.25em;
+				padding: 0;
+				list-style: disc;
+				color: rgba(255, 255, 255, 0.78);
+			}
+			.career-highlights li {
+				margin-bottom: 0.5em;
 				line-height: 1.6;
 			}
 		</style>
@@ -111,42 +125,62 @@
 									</div>
 									<span class="image"><img src="images/MyImage.jpg" alt="Ammratansh Ghildyal" /></span>
 								</div>
-								
+
 								<!-- Career Journey Section -->
 								<div class="career-timeline">
-									<header class="major" style="text-align: center; margin-top: 3em;">
+									<header class="major career-section-header" style="text-align: center; margin-top: 3em;">
 										<h2>Career Journey</h2>
 									</header>
-									
+
 									<article class="career-card">
 										<div class="career-content">
 											<h3>Master of Science in Business Analytics</h3>
-											<p class="career-company">University of Illinois Urbana-Champaign · Aug 2025 – May 2026</p>
+											<p class="career-company">University of Illinois Urbana-Champaign &middot; Aug 2025 - May 2026</p>
 											<p class="career-summary">Deepening expertise in advanced analytics, experimentation, and product-focused decision-making.</p>
+											<ul class="career-highlights">
+												<li>Focused study in analytics, causal inference, and product strategy with hands-on capstone work.</li>
+												<li>Coursework in data analytics, causal inference, and marketing analytics.</li>
+												<li>Strengthening product-focused decision-making through practical team projects.</li>
+											</ul>
 										</div>
 									</article>
 
 									<article class="career-card">
 										<div class="career-content">
-											<h3>Senior Manager, Business Intelligence Unit – Digital Business & Transformation</h3>
-											<p class="career-company">Axis Bank · Oct 2022 – Jun 2025</p>
+											<h3>Senior Manager, Business Intelligence Unit - Digital Business &amp; Transformation</h3>
+											<p class="career-company">Axis Bank &middot; Oct 2022 - Jun 2025</p>
 											<p class="career-summary">Led analytics for digital current account products and platforms, driving growth, conversion, and operational efficiency.</p>
+											<ul class="career-highlights">
+												<li>Grew digital current account users 23% YoY and balances 80-85% through funnel and platform analytics.</li>
+												<li>Reduced account freeze rate by 30%+ through root-cause analysis and sourcing controls.</li>
+												<li>Built dashboards and data marts for onboarding, usage, and campaign performance monitoring.</li>
+											</ul>
 										</div>
 									</article>
 
 									<article class="career-card">
 										<div class="career-content">
 											<h3>Senior Consultant, Business Consulting</h3>
-											<p class="career-company">Ernst & Young · Nov 2020 – Oct 2022</p>
+											<p class="career-company">Ernst &amp; Young &middot; Nov 2020 - Oct 2022</p>
 											<p class="career-summary">Drove analytics engagements for financial services clients across marketing, operations, and risk initiatives.</p>
+											<ul class="career-highlights">
+												<li>Validated 2.7M loans using cohort-based scenario analysis, eliminating 80-90% of manual checks.</li>
+												<li>Automated MIS reporting with Python and VBA, reducing report generation time by 70-80%.</li>
+												<li>Built funnel and attribution dashboards in BigQuery and Looker Studio for banking campaigns.</li>
+											</ul>
 										</div>
 									</article>
 
 									<article class="career-card">
 										<div class="career-content">
 											<h3>Decision Scientist</h3>
-											<p class="career-company">Mu Sigma · Aug 2017 – Nov 2020</p>
+											<p class="career-company">Mu Sigma &middot; Aug 2017 - Nov 2020</p>
 											<p class="career-summary">Built data-driven decision frameworks for Fortune 500 clients in insurance and retail domains.</p>
+											<ul class="career-highlights">
+												<li>Standardized KPIs and centralized dashboards for 9 distribution centers, reducing reporting time by 85-90%.</li>
+												<li>Applied text mining to healthcare claims data, helping drive about USD 2M in annual savings.</li>
+												<li>Managed and quality-checked Qlik Sense dashboards supporting operations and decision-making.</li>
+											</ul>
 										</div>
 									</article>
 								</div>
@@ -247,7 +281,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						
+
 						<p class="copyright">&copy; Ammratansh Ghildyal. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
