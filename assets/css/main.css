@@ -3080,6 +3080,21 @@ input, select, textarea {
 	#header {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
+		background-color: var(--bg);
+		background-image: none;
+	}
+
+	#header,
+	#intro,
+	#banner {
+		background-color: var(--bg);
+		background-image: none;
+	}
+
+	#header:before,
+	#intro:before,
+	#banner:before {
+		background: none;
 	}
 
 		#header h1 {
