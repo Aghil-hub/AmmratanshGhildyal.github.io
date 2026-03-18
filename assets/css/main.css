@@ -4016,7 +4016,7 @@ input, select, textarea {
   }
 }
 
-/* Projects section layout */
+/* Projects section: two cards, responsive */
 #projects .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4031,9 +4031,10 @@ input, select, textarea {
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
   padding: 2rem 1.75rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
 }
 
 .project-card__heading {
@@ -4047,8 +4048,8 @@ input, select, textarea {
 }
 
 .project-item {
-  padding-top: 0.75rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -4062,13 +4063,14 @@ input, select, textarea {
 .project-item__description {
   margin: 0;
   font-size: 0.95em;
+  opacity: 0.9;
 }
 
 .project-item__action {
   margin-top: 0.25rem;
 }
 
-/* Make the action align nicely on wider screens */
+/* Align text + button on wider screens */
 @media screen and (min-width: 736px) {
   .project-item {
     flex-direction: row;
@@ -4086,4 +4088,5 @@ input, select, textarea {
   font-size: 0.85em;
   padding: 0.4rem 0.9rem;
 }
+
 
