@@ -12,131 +12,248 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#footer { text-align: center; }
+			#header.alt p { margin-bottom: 0 !important; }
+			#header.alt h1 { margin-top: 0 !important; }
+			.social-boxes {
+				display: flex;
+				justify-content: center;
+				gap: 1.5em;
+				flex-wrap: wrap;
+				list-style: none;
+				padding: 0;
+				margin: 0 0 2em 0;
+			}
+			.social-boxes li a {
+				display: flex;
+				align-items: center;
+				gap: 0.6em;
+				padding: 0.8em 1.5em;
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				border-radius: 5px;
+				color: rgba(255, 255, 255, 0.85);
+				text-decoration: none;
+				transition: all 0.3s ease;
+				font-size: 1rem;
+			}
+			.social-boxes li a:hover {
+				background: rgba(255, 255, 255, 0.1);
+				border-color: rgba(255, 255, 255, 0.6);
+				color: #fff;
+			}
+			.social-boxes li a i {
+				font-size: 1.3em;
+			}
+
+			/* Career Journey Styling */
+			#career header.major h2:after {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.career-journey {
+				max-width: 720px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.career-entry {
+				padding: 1.25rem 0;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+			}
+			.career-entry:last-child {
+				border-bottom: none;
+			}
+			.career-entry h3 {
+				margin: 0 0 0.35rem 0;
+			}
+			.career-entry p {
+				margin: 0.2rem 0;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
-		<div id="wrapper">
 
-			<!-- Hero -->
-			<section id="hero" class="main special hero">
-				<header class="major">
-					<p>Hi, I am</p>
-					<h1>Ammratansh Ghildyal</h1>
-				</header>
-				<ul class="hero-actions">
-					<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" class="button icon brands fa-linkedin" target="_blank">LinkedIn</a></li>
-					<li><a href="https://github.com/Aghil-hub" class="button icon brands fa-github" target="_blank">GitHub</a></li>
-					<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" class="button icon solid fa-chart-bar" target="_blank">Tableau</a></li>
-				</ul>
-			</section>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-			<!-- About -->
-			<section id="intro" class="main">
-				<header class="major">
-					<h2>About Me</h2>
-				</header>
-				<p>I am a data-driven problem solver with 7+ years of experience combining analytics, storytelling, and business acumen to drive smarter business decisions. I began my career in consulting and decision science, working with Fortune 500 clients across insurance, retail, and financial services industries. I then moved into banking, leading analytics for digital products and platforms at one of the largest private sector banks in India. I strive to constantly keep learning and am currently completing an MS in Business Analytics at the University of Illinois Urbana-Champaign.</p>
-			</section>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<p>Hi, I am</p>
+						<h1><strong>Ammratansh Ghildyal</strong></h1>
+						<ul class="social-boxes">
+							<li><a href="https://www.linkedin.com/in/ammratansh-ghildyal" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+							<li><a href="https://github.com/Aghil-hub" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+							<li><a href="https://public.tableau.com/app/profile/ammratansh.ghildyal8518/vizzes" target="_blank"><i class="fas fa-chart-bar"></i> Tableau</a></li>
+						</ul>
+					</header>
 
-			<!-- Career Journey -->
-			<section id="career" class="main special">
-				<header class="major">
-					<h2>Career Journey</h2>
-				</header>
-				<div class="career-journey">
-					<div class="career-entry">
-						<h3>Master of Science in Business Analytics</h3>
-						<p><strong>University of Illinois Urbana-Champaign</strong> | Aug 2025 - May 2026</p>
-						<p>Deepening expertise at the intersection of advanced analytics and business strategy to drive higher-impact decisions.</p>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About Me</h2>
+										</header>
+										<p>I am a data-driven problem solver with 7+ years of experience combining analytics, storytelling, and business acumen to drive smarter business decisions. I began my career in consulting and decision science, working with Fortune 500 clients across insurance, retail, and financial services industries. I then moved into banking, leading analytics for digital products and platforms at one of the largest private sector banks in India. I strive to constantly keep learning and am currently completing an MS in Business Analytics at the University of Illinois Urbana-Champaign.
+										</p>
+									</div>
+									<span class="image"><img src="images/MyImage.jpg" alt="Ammratansh Ghildyal" /></span>
+								</div>
+
+							</section>
+
+						<section id="career" class="main special">
+							<header class="major">
+								<h2>Career Journey</h2>
+							</header>
+							<div class="career-journey">
+								<div class="career-entry">
+									<h3>Master of Science in Business Analytics</h3>
+									<p><strong>University of Illinois Urbana-Champaign</strong> | Aug 2025 - May 2026</p>
+									<p>Deepening expertise at the intersection of advanced analytics and business strategy to drive higher-impact decisions.</p>
+								</div>
+
+								<div class="career-entry">
+									<h3>Senior Manager, Business Intelligence Unit - Digital Business &amp; Transformation</h3>
+									<p><strong>Axis Bank</strong> | Oct 2022 - Jun 2025</p>
+									<p>Led digital banking analytics, driving growth and operational efficiency across current account products and multiple digital platforms.</p>
+								</div>
+
+								<div class="career-entry">
+									<h3>Senior Consultant, Business Consulting</h3>
+									<p><strong>Ernst &amp; Young</strong> | Nov 2020 - Oct 2022</p>
+									<p>Analytics consultant for financial services clients, providing end-to-end solutions across marketing, business operations, and risk domains.</p>
+								</div>
+
+								<div class="career-entry">
+									<h3>Decision Scientist</h3>
+									<p><strong>Mu Sigma</strong> | Aug 2017 - Nov 2020</p>
+									<p>Decision scientist for Fortune 500 clients tackling complex operational and analytics problems across insurance and retail industries.</p>
+								</div>
+							</div>
+						</section>
+
+						<!-- Projects Section -->
+							<section id="projects" class="main special">
+								<header class="major">
+									<h2>Projects</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-chart-bar"></span>
+										<h3>Digital Banking Dashboards</h3>
+										<p>Built interactive Power BI dashboards for real-time monitoring of digital banking KPIs, customer acquisition, and transaction trends.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-chart-line"></span>
+										<h3>Cohort Analysis</h3>
+										<p>Developed customer cohort analysis framework to track retention patterns and identify revenue growth opportunities across segments.</p>
+									</li>
+									<li>
+										<span class="icon solid major style5 fa-cogs"></span>
+										<h3>Automation Scripts</h3>
+										<p>Created Python and SQL automation scripts for report generation and data pipelines, achieving 85% reduction in manual effort.</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="Ammratansh_Ghildyal_Resume.pdf" class="button">Download Resume</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Second Section (Placeholder) -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Ipsum consequat</h2>
+									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>5,120</strong> Etiam
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>8,192</strong> Magna
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>2,048</strong> Tempus
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>4,096</strong> Aliquam
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>1,024</strong> Nullam
+									</li>
+								</ul>
+								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Contact -->
+							<section id="contact" class="main special">
+								<header class="major">
+									<h2>Contact Me</h2>
+								</header>
+								<form method="post" action="https://formspree.io/f/xpwzdpwk">
+									<div class="row gtr-uniform">
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="_replyto" id="email" placeholder="Your Email" required />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="_subject" id="subject" placeholder="Subject" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions special">
+												<li><input type="submit" value="Send Message" class="primary" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+
 					</div>
 
-					<div class="career-entry">
-						<h3>Senior Manager, Business Intelligence Unit - Digital Business &amp; Transformation</h3>
-						<p><strong>Axis Bank</strong> | Oct 2022 - Jun 2025</p>
-						<p>Led digital banking analytics, driving growth and operational efficiency across current account products and multiple digital platforms.</p>
-					</div>
+				<!-- Footer -->
+					<footer id="footer">
 
-					<div class="career-entry">
-						<h3>Senior Consultant, Business Consulting</h3>
-						<p><strong>Ernst &amp; Young</strong> | Nov 2020 - Oct 2022</p>
-						<p>Analytics consultant for financial services clients, providing end-to-end solutions across marketing, business operations, and risk domains.</p>
-					</div>
+						<p class="copyright">&copy; Ammratansh Ghildyal. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 
-					<div class="career-entry">
-						<h3>Decision Scientist</h3>
-						<p><strong>Mu Sigma</strong> | Aug 2017 - Nov 2020</p>
-						<p>Decision scientist for Fortune 500 clients tackling complex operational and analytics problems across insurance and retail industries.</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- Projects -->
-			<section id="projects" class="main special">
-				<header class="major">
-					<h2>Projects</h2>
-				</header>
-				<ul class="features">
-					<li>
-						<span class="icon solid major style1 fa-chart-bar"></span>
-						<h3>Digital Banking Dashboards</h3>
-						<p>Built interactive Power BI dashboards for real-time monitoring of digital banking KPIs, customer acquisition, and transaction trends.</p>
-					</li>
-					<li>
-						<span class="icon major style3 fa-chart-line"></span>
-						<h3>Cohort Analysis</h3>
-						<p>Developed customer cohort analysis framework to track retention patterns and identify revenue growth opportunities across segments.</p>
-					</li>
-					<li>
-						<span class="icon solid major style5 fa-cogs"></span>
-						<h3>Automation Scripts</h3>
-						<p>Created Python and SQL automation scripts for report generation and data pipelines, achieving 85% reduction in manual effort.</p>
-					</li>
-				</ul>
-				<footer class="major">
-					<ul class="actions special">
-						<li><a href="Ammratansh_Ghildyal_Resume.pdf" class="button">Download Resume</a></li>
-					</ul>
-				</footer>
-			</section>
-
-			<!-- Contact -->
-			<section id="contact" class="main special">
-				<header class="major">
-					<h2>Contact Me</h2>
-				</header>
-				<form method="post" action="https://formspree.io/f/xpwzdpwk">
-					<div class="row gtr-uniform">
-						<div class="col-6 col-12-xsmall">
-							<input type="email" name="_replyto" id="email" placeholder="Your Email" required />
-						</div>
-						<div class="col-6 col-12-xsmall">
-							<input type="text" name="_subject" id="subject" placeholder="Subject" />
-						</div>
-						<div class="col-12">
-							<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
-						</div>
-						<div class="col-12">
-							<ul class="actions special">
-								<li><input type="submit" value="Send Message" class="primary" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>
-			</section>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">&copy; Ammratansh Ghildyal. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-			</footer>
-
-		</div>
+			</div>
 
 		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>
