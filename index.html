@@ -100,13 +100,50 @@
 				box-shadow: 0 1.2rem 2.4rem rgba(16, 24, 40, 0.14);
 				border-color: rgba(63, 88, 122, 0.18);
 			}
+			.career-entry-header {
+				display: flex;
+				align-items: flex-start;
+				gap: 1rem;
+				margin-bottom: 0.95rem;
+			}
+			.career-entry-logo {
+				width: 3.35rem;
+				height: 3.35rem;
+				border-radius: 0.95rem;
+				background: #ffffff;
+				border: 1px solid rgba(63, 88, 122, 0.12);
+				box-shadow: 0 0.4rem 1rem rgba(16, 24, 40, 0.08);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0;
+				overflow: hidden;
+			}
+			.career-entry-logo img {
+				width: 74%;
+				height: 74%;
+				object-fit: contain;
+				display: block;
+			}
+			.career-entry-heading {
+				min-width: 0;
+			}
+			.career-entry-organization {
+				margin: 0 0 0.2rem 0;
+				font-size: 0.95rem;
+				font-weight: 700;
+				color: #3f587a;
+				letter-spacing: 0.01em;
+			}
 			.career-entry h3 {
-				margin: 0 0 0.45rem 0;
+				margin: 0 0 0.3rem 0;
+				font-size: 1.3rem;
+				font-weight: 700;
 				line-height: 1.3;
 			}
 			.career-entry-meta {
-				margin: 0 0 0.6rem 0;
-				font-size: 0.95rem;
+				margin: 0;
+				font-size: 0.92rem;
 				color: rgba(34, 34, 34, 0.76);
 			}
 			.career-entry-description {
@@ -130,6 +167,17 @@
 				}
 				.career-entry-card {
 					padding: 1.2rem 1.1rem;
+				}
+				.career-entry-header {
+					gap: 0.8rem;
+					margin-bottom: 0.8rem;
+				}
+				.career-entry-logo {
+					width: 3rem;
+					height: 3rem;
+				}
+				.career-entry h3 {
+					font-size: 1.15rem;
 				}
 			}
 		</style>
@@ -185,8 +233,16 @@
 								<div class="career-entry">
 									<div class="career-entry-marker"></div>
 									<div class="career-entry-card">
-										<h3>Master of Science in Business Analytics</h3>
-										<p class="career-entry-meta"><strong>University of Illinois Urbana-Champaign</strong> | Aug 2025 - May 2026</p>
+										<div class="career-entry-header">
+											<div class="career-entry-logo">
+												<img src="https://logo.clearbit.com/illinois.edu" alt="University of Illinois Urbana-Champaign logo" />
+											</div>
+											<div class="career-entry-heading">
+												<p class="career-entry-organization">University of Illinois Urbana-Champaign</p>
+												<h3>Master of Science in Business Analytics</h3>
+												<p class="career-entry-meta">Aug 2025 - May 2026</p>
+											</div>
+										</div>
 										<p class="career-entry-description">Deepening expertise at the intersection of advanced analytics and business strategy to drive higher-impact decisions.</p>
 									</div>
 								</div>
@@ -194,8 +250,16 @@
 								<div class="career-entry">
 									<div class="career-entry-marker"></div>
 									<div class="career-entry-card">
-										<h3>Senior Manager, Business Intelligence Unit - Digital Business &amp; Transformation</h3>
-										<p class="career-entry-meta"><strong>Axis Bank</strong> | Oct 2022 - Jun 2025</p>
+										<div class="career-entry-header">
+											<div class="career-entry-logo">
+												<img src="https://logo.clearbit.com/axisbank.com" alt="Axis Bank logo" />
+											</div>
+											<div class="career-entry-heading">
+												<p class="career-entry-organization">Axis Bank</p>
+												<h3>Senior Manager, Business Intelligence Unit - Digital Business &amp; Transformation</h3>
+												<p class="career-entry-meta">Oct 2022 - Jun 2025</p>
+											</div>
+										</div>
 										<p class="career-entry-description">Led digital banking analytics, driving growth and operational efficiency across current account products and multiple digital platforms.</p>
 									</div>
 								</div>
@@ -203,8 +267,16 @@
 								<div class="career-entry">
 									<div class="career-entry-marker"></div>
 									<div class="career-entry-card">
-										<h3>Senior Consultant, Business Consulting</h3>
-										<p class="career-entry-meta"><strong>Ernst &amp; Young</strong> | Nov 2020 - Oct 2022</p>
+										<div class="career-entry-header">
+											<div class="career-entry-logo">
+												<img src="https://logo.clearbit.com/ey.com" alt="Ernst and Young logo" />
+											</div>
+											<div class="career-entry-heading">
+												<p class="career-entry-organization">Ernst &amp; Young</p>
+												<h3>Senior Consultant, Business Consulting</h3>
+												<p class="career-entry-meta">Nov 2020 - Oct 2022</p>
+											</div>
+										</div>
 										<p class="career-entry-description">Analytics consultant for financial services clients, providing end-to-end solutions across marketing, business operations, and risk domains.</p>
 									</div>
 								</div>
@@ -212,8 +284,16 @@
 								<div class="career-entry">
 									<div class="career-entry-marker"></div>
 									<div class="career-entry-card">
-										<h3>Decision Scientist</h3>
-										<p class="career-entry-meta"><strong>Mu Sigma</strong> | Aug 2017 - Nov 2020</p>
+										<div class="career-entry-header">
+											<div class="career-entry-logo">
+												<img src="https://logo.clearbit.com/musigma.com" alt="Mu Sigma logo" />
+											</div>
+											<div class="career-entry-heading">
+												<p class="career-entry-organization">Mu Sigma</p>
+												<h3>Decision Scientist</h3>
+												<p class="career-entry-meta">Aug 2017 - Nov 2020</p>
+											</div>
+										</div>
 										<p class="career-entry-description">Decision scientist for Fortune 500 clients tackling complex operational and analytics problems across insurance and retail industries.</p>
 									</div>
 								</div>
