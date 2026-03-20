@@ -4114,6 +4114,8 @@ input, select, textarea {
   align-self: start;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   padding-left: 0.1rem;
 }
 
