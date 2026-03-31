@@ -109,6 +109,11 @@
 				box-shadow: 0 1.2rem 2.4rem rgba(16, 24, 40, 0.14);
 				border-color: rgba(63, 88, 122, 0.18);
 			}
+			.career-entry-card--link {
+				display: block;
+				color: inherit;
+				text-decoration: none;
+			}
 			.career-entry-header {
 				display: flex;
 				align-items: flex-start;
@@ -161,6 +166,17 @@
 				margin: 0;
 				line-height: 1.75;
 				color: rgba(34, 34, 34, 0.82);
+			}
+			.career-entry-cta {
+				margin: 0.95rem 0 0 0;
+				font-size: 0.9rem;
+				font-weight: 700;
+				color: #3f587a;
+				letter-spacing: 0.01em;
+			}
+			.career-entry-card--link:hover .career-entry-organization,
+			.career-entry-card--link:hover .career-entry-cta {
+				color: #2f4460;
 			}
 			@media screen and (max-width: 736px) {
 				.career-journey:before {
@@ -244,7 +260,7 @@
 							<div class="career-journey">
 								<div class="career-entry">
 									<div class="career-entry-marker"></div>
-									<div class="career-entry-card">
+									<a class="career-entry-card career-entry-card--link" href="career-details.html#uiuc" target="_blank" rel="noopener noreferrer">
 										<div class="career-entry-header">
 											<div class="career-entry-logo">
 												<img src="images/logos/Illinois_UIUC.png" alt="University of Illinois Urbana-Champaign logo" />
@@ -256,12 +272,13 @@
 											</div>
 										</div>
 										<p class="career-entry-description">Deepening expertise at the intersection of advanced analytics and business strategy to drive higher-impact decisions.</p>
-									</div>
+										<p class="career-entry-cta">View details &#8599;</p>
+									</a>
 								</div>
 
 								<div class="career-entry">
 									<div class="career-entry-marker"></div>
-									<div class="career-entry-card">
+									<a class="career-entry-card career-entry-card--link" href="career-details.html#axis-bank" target="_blank" rel="noopener noreferrer">
 										<div class="career-entry-header">
 											<div class="career-entry-logo">
 												<img src="images/logos/axis_bank.png" alt="Axis Bank logo" />
@@ -273,12 +290,13 @@
 											</div>
 										</div>
 										<p class="career-entry-description">Led digital banking analytics, driving growth and operational efficiency across current account products and multiple digital platforms.</p>
-									</div>
+										<p class="career-entry-cta">View details &#8599;</p>
+									</a>
 								</div>
 
 								<div class="career-entry">
 									<div class="career-entry-marker"></div>
-									<div class="career-entry-card">
+									<a class="career-entry-card career-entry-card--link" href="career-details.html#ey" target="_blank" rel="noopener noreferrer">
 										<div class="career-entry-header">
 											<div class="career-entry-logo">
 												<img src="images/logos/ey.svg" alt="Ernst and Young logo" />
@@ -290,12 +308,13 @@
 											</div>
 										</div>
 										<p class="career-entry-description">Analytics consultant for financial services clients, providing end-to-end solutions across marketing, business operations, and risk domains.</p>
-									</div>
+										<p class="career-entry-cta">View details &#8599;</p>
+									</a>
 								</div>
 
 								<div class="career-entry">
 									<div class="career-entry-marker"></div>
-									<div class="career-entry-card">
+									<a class="career-entry-card career-entry-card--link" href="career-details.html#mu-sigma" target="_blank" rel="noopener noreferrer">
 										<div class="career-entry-header">
 											<div class="career-entry-logo">
 												<img src="images/logos/mu-sigma.jpg" alt="Mu Sigma logo" />
@@ -307,7 +326,8 @@
 											</div>
 										</div>
 										<p class="career-entry-description">Decision scientist for Fortune 500 clients tackling complex operational and analytics problems across insurance and retail industries.</p>
-									</div>
+										<p class="career-entry-cta">View details &#8599;</p>
+									</a>
 								</div>
 							</div>
 						</section>
