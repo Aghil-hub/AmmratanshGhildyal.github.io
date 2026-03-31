@@ -28,8 +28,8 @@
 				display: flex;
 				justify-content: center;
 				flex-wrap: wrap;
-				gap: 0.85rem;
-				margin: 0 auto 2rem auto;
+				gap: 2.75rem;
+				margin: 0 auto 2.5rem auto;
 				padding: 0;
 				list-style: none;
 			}
@@ -40,18 +40,36 @@
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
-				padding: 0.7rem 1rem;
-				border-radius: 999px;
-				background: rgba(63, 88, 122, 0.08);
-				color: rgba(17, 17, 17, 0.86);
+				padding: 0.35rem 0.2rem;
+				color: rgba(17, 17, 17, 0.78);
 				text-decoration: none;
-				border: 1px solid rgba(63, 88, 122, 0.12);
-				transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+				border: 0;
+				font-size: 1.65rem;
+				font-weight: 300;
+				letter-spacing: -0.02em;
+				transition: color 0.25s ease, transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 			}
 			.career-detail-nav a:hover {
-				background: rgba(63, 88, 122, 0.14);
-				border-color: rgba(63, 88, 122, 0.2);
+				color: #3f587a;
 				transform: translateY(-0.1rem);
+			}
+			.career-detail-nav__home {
+				width: 3.4rem;
+				height: 3.4rem;
+				padding: 0;
+				border-radius: 1rem;
+				background: rgba(255, 255, 255, 0.95);
+				box-shadow: 0 0.75rem 1.5rem rgba(16, 24, 40, 0.10);
+				color: #3f587a;
+			}
+			.career-detail-nav__home:hover {
+				background: #ffffff;
+				box-shadow: 0 1rem 1.9rem rgba(16, 24, 40, 0.14);
+				color: #2f4460;
+			}
+			.career-detail-nav__home:before {
+				font-size: 1.15rem;
+				margin: 0;
 			}
 			.career-detail {
 				scroll-margin-top: 2rem;
@@ -133,6 +151,17 @@
 				text-align: center;
 			}
 			@media screen and (max-width: 736px) {
+				.career-detail-nav {
+					gap: 1.25rem;
+					margin-bottom: 2rem;
+				}
+				.career-detail-nav a {
+					font-size: 1.2rem;
+				}
+				.career-detail-nav__home {
+					width: 3rem;
+					height: 3rem;
+				}
 				.career-detail-card {
 					padding: 1.4rem 1.2rem 1.15rem 1.2rem;
 				}
@@ -168,7 +197,7 @@
 
 						<section class="main special">
 							<ul class="career-detail-nav">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html" class="career-detail-nav__home icon solid fa-home"><span class="label">Home</span></a></li>
 								<li><a href="#uiuc">UIUC</a></li>
 								<li><a href="#axis-bank">Axis Bank</a></li>
 								<li><a href="#ey">EY</a></li>
