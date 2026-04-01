@@ -149,17 +149,29 @@
 				margin-bottom: 0.7rem;
 				line-height: 1.75;
 			}
-			.career-detail-keyskills {
-				margin: 1.1rem 0 0 0;
-				line-height: 1.8;
-			}
-			.career-detail-keyskills strong {
-				color: #111111;
-			}
-			.career-detail-actions {
-				margin-top: 2rem;
-				text-align: center;
-			}
+			        .key-skills-label {
+            margin: 1.1rem 0 0.3rem 0;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #888;
+        }
+        .key-skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0.5rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .key-skills-list li {
+            font-size: 0.78rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            border: 1px solid rgba(0,0,0,0.15);
+            background: rgba(0,0,0,0.04);
+            color: #444;
+        }
 			@media screen and (max-width: 736px) {
 				.career-detail-nav {
 					gap: 1.25rem;
@@ -231,7 +243,19 @@
 									<li>Led a student consulting team for a legal/tax research client, designing Claude-based LLM prototypes and AI search recommendations that better match experts' natural research workflows and increase trust in AI-assisted research.</li>
 									<li>Led a finalist team in the 2025 Sustainability Expertise Case Competition, using AI-assisted data collection to build a comparative SDG dashboard and THE Impact Ranking strategy to strengthen UIUC's sustainability positioning and decision-making.</li>
 								</ul>
-								<p class="career-detail-keyskills"><strong>Key Skills:</strong> AI product thinking, LLM/AI prototyping (Claude), prompt engineering, web dashboard development, ETL/ELT and data pipeline design, experimentation and ML fundamentals, business intelligence, problem framing, client/stakeholder management, team leadership.</p>
+								                                <p class="key-skills-label"><strong>Key skills</strong></p>
+                                <ul class="key-skills-list">
+                                    <li>AI product thinking</li>
+                                    <li>LLM/AI prototyping (Claude)</li>
+                                    <li>Prompt engineering</li>
+                                    <li>Web dashboard development</li>
+                                    <li>ETL/ELT pipelines</li>
+                                    <li>Experimentation &amp; ML fundamentals</li>
+                                    <li>Business intelligence</li>
+                                    <li>Problem framing</li>
+                                    <li>Stakeholder management</li>
+                                    <li>Team leadership</li>
+                                </ul>
 							</div>
 						</section>
 
@@ -269,8 +293,8 @@
 										<h2 class="career-detail-role">Senior Consultant, Business Consulting</h2>
 										<p class="career-detail-meta">Nov 2020 - Oct 2022</p>
 									</div>
-								</div>
-								<p>At EY, I worked as an analytics consultant for financial services clients, contributing to end-to-end problem solving across marketing, business operations, and risk-related domains. This stage strengthened my ability to move from business questions to structured analytical approaches.</p>
+Led a student
+									<p>At EY, I worked as an analytics consultant for financial services clients, contributing to end-to-end problem solving across marketing, business operations, and risk-related domains. This stage strengthened my ability to move from business questions to structured analytical approaches.</p>
 								<p>It also reinforced the consulting side of analytics: understanding stakeholder needs, framing workstreams clearly, and translating technical outputs into recommendations that were practical and relevant for business teams.</p>
 								<ul class="career-detail-points">
 									<li>Financial services analytics consulting</li>
