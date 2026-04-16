@@ -178,7 +178,60 @@
 			.career-entry-card--link:hover .career-entry-cta {
 				color: #2f4460;
 			}
+			.overview-layout {
+				display: grid;
+				grid-template-columns: minmax(0, 1.55fr) minmax(18rem, 1fr);
+				gap: 2rem;
+				align-items: start;
+			}
+			.overview-panel {
+				text-align: left;
+			}
+			.overview-panel header.major {
+				text-align: left;
+				margin: 0 0 2rem 0;
+			}
+			#career.overview-panel header.major h2:after,
+			#skills.overview-panel header.major h2:after {
+				margin-left: 0;
+				margin-right: auto;
+			}
+			#career.overview-panel .career-journey {
+				max-width: none;
+				margin: 0;
+			}
+			#skills.overview-panel .skills-grid {
+				max-width: none;
+				grid-template-columns: 1fr;
+				gap: 1rem;
+			}
+			#skills.overview-panel .skill-card {
+				padding: 1.4rem 1.25rem 1.25rem 1.25rem;
+			}
+			#skills.overview-panel .skill-card__header {
+				margin-bottom: 0.85rem;
+			}
+			#skills.overview-panel .skill-pill-list {
+				gap: 0.55rem;
+			}
+			#skills.overview-panel .skill-pill-list li {
+				font-size: 0.86rem;
+			}
+			@media screen and (max-width: 1100px) {
+				.overview-layout {
+					grid-template-columns: 1fr;
+				}
+				#skills.overview-panel .skills-grid {
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+				}
+			}
 			@media screen and (max-width: 736px) {
+				.overview-layout {
+					gap: 1.5rem;
+				}
+				#skills.overview-panel .skills-grid {
+					grid-template-columns: 1fr;
+				}
 				.career-journey:before {
 					left: 1rem;
 				}
@@ -253,81 +306,166 @@
 
 							</section>
 
-						<section id="career" class="main special">
-							<header class="major">
-								<h2>Career Journey</h2>
-							</header>
-							<div class="career-journey">
-								<div class="career-entry">
-									<div class="career-entry-marker"></div>
-									<a class="career-entry-card career-entry-card--link" href="career-details.html#uiuc">
-										<div class="career-entry-header">
-											<div class="career-entry-logo">
-												<img src="images/logos/Illinois_UIUC.png" alt="University of Illinois Urbana-Champaign logo" />
-											</div>
-											<div class="career-entry-heading">
-												<p class="career-entry-organization">University of Illinois Urbana-Champaign</p>
-												<h3>Master of Science in Business Analytics</h3>
-												<p class="career-entry-meta">Aug 2025 - May 2026</p>
-											</div>
+						<section class="main">
+							<div class="overview-layout">
+								<div id="career" class="overview-panel">
+									<header class="major">
+										<h2>Career Journey</h2>
+									</header>
+									<div class="career-journey">
+										<div class="career-entry">
+											<div class="career-entry-marker"></div>
+											<a class="career-entry-card career-entry-card--link" href="career-details.html#uiuc">
+												<div class="career-entry-header">
+													<div class="career-entry-logo">
+														<img src="images/logos/Illinois_UIUC.png" alt="University of Illinois Urbana-Champaign logo" />
+													</div>
+													<div class="career-entry-heading">
+														<p class="career-entry-organization">University of Illinois Urbana-Champaign</p>
+														<h3>Master of Science in Business Analytics</h3>
+														<p class="career-entry-meta">Aug 2025 - May 2026</p>
+													</div>
+												</div>
+												<p class="career-entry-description">Deepening expertise at the intersection of advanced analytics and business strategy to drive higher-impact decisions.</p>
+												<p class="career-entry-cta">View details &#8599;</p>
+											</a>
 										</div>
-										<p class="career-entry-description">Deepening expertise at the intersection of advanced analytics and business strategy to drive higher-impact decisions.</p>
-										<p class="career-entry-cta">View details &#8599;</p>
-									</a>
+
+										<div class="career-entry">
+											<div class="career-entry-marker"></div>
+											<a class="career-entry-card career-entry-card--link" href="career-details.html#axis-bank">
+												<div class="career-entry-header">
+													<div class="career-entry-logo">
+														<img src="images/logos/axis_bank.png" alt="Axis Bank logo" />
+													</div>
+													<div class="career-entry-heading">
+														<p class="career-entry-organization">Axis Bank</p>
+														<h3>Senior Manager, Business Intelligence Unit - Digital Business &amp; Transformation</h3>
+														<p class="career-entry-meta">Oct 2022 - Jun 2025</p>
+													</div>
+												</div>
+												<p class="career-entry-description">Led digital banking analytics, driving growth and operational efficiency across current account products and multiple digital platforms.</p>
+												<p class="career-entry-cta">View details &#8599;</p>
+											</a>
+										</div>
+
+										<div class="career-entry">
+											<div class="career-entry-marker"></div>
+											<a class="career-entry-card career-entry-card--link" href="career-details.html#ey">
+												<div class="career-entry-header">
+													<div class="career-entry-logo">
+														<img src="images/logos/ey.svg" alt="Ernst and Young logo" />
+													</div>
+													<div class="career-entry-heading">
+														<p class="career-entry-organization">Ernst &amp; Young</p>
+														<h3>Senior Consultant, Business Consulting</h3>
+														<p class="career-entry-meta">Nov 2020 - Oct 2022</p>
+													</div>
+												</div>
+												<p class="career-entry-description">Analytics consultant for financial services clients, providing end-to-end solutions across marketing, business operations, and risk domains.</p>
+												<p class="career-entry-cta">View details &#8599;</p>
+											</a>
+										</div>
+
+										<div class="career-entry">
+											<div class="career-entry-marker"></div>
+											<a class="career-entry-card career-entry-card--link" href="career-details.html#mu-sigma">
+												<div class="career-entry-header">
+													<div class="career-entry-logo">
+														<img src="images/logos/mu-sigma.jpg" alt="Mu Sigma logo" />
+													</div>
+													<div class="career-entry-heading">
+														<p class="career-entry-organization">Mu Sigma</p>
+														<h3>Decision Scientist</h3>
+														<p class="career-entry-meta">Aug 2017 - Nov 2020</p>
+													</div>
+												</div>
+												<p class="career-entry-description">Decision scientist for Fortune 500 clients tackling complex operational and analytics problems across insurance and retail industries.</p>
+												<p class="career-entry-cta">View details &#8599;</p>
+											</a>
+										</div>
+									</div>
 								</div>
 
-								<div class="career-entry">
-									<div class="career-entry-marker"></div>
-									<a class="career-entry-card career-entry-card--link" href="career-details.html#axis-bank">
-										<div class="career-entry-header">
-											<div class="career-entry-logo">
-												<img src="images/logos/axis_bank.png" alt="Axis Bank logo" />
+								<div id="skills" class="overview-panel">
+									<header class="major">
+										<h2>Skills</h2>
+									</header>
+									<div class="skills-grid">
+										<article class="skill-card">
+											<div class="skill-card__header">
+												<div class="skill-card__icon">
+													<span class="icon solid fa-code"></span>
+												</div>
+												<h3>Programming &amp; Data Foundations</h3>
 											</div>
-											<div class="career-entry-heading">
-												<p class="career-entry-organization">Axis Bank</p>
-												<h3>Senior Manager, Business Intelligence Unit - Digital Business &amp; Transformation</h3>
-												<p class="career-entry-meta">Oct 2022 - Jun 2025</p>
-											</div>
-										</div>
-										<p class="career-entry-description">Led digital banking analytics, driving growth and operational efficiency across current account products and multiple digital platforms.</p>
-										<p class="career-entry-cta">View details &#8599;</p>
-									</a>
-								</div>
+											<ul class="skill-pill-list">
+												<li>SQL</li>
+												<li>Python</li>
+												<li>PySpark / Big-Data Querying</li>
+												<li>SAS</li>
+												<li>ETL/ELT</li>
+												<li>Data Preparation &amp; Modeling</li>
+												<li>Feature Engineering</li>
+												<li>Query Optimization</li>
+												<li>Data Quality &amp; Validation</li>
+											</ul>
+										</article>
 
-								<div class="career-entry">
-									<div class="career-entry-marker"></div>
-									<a class="career-entry-card career-entry-card--link" href="career-details.html#ey">
-										<div class="career-entry-header">
-											<div class="career-entry-logo">
-												<img src="images/logos/ey.svg" alt="Ernst and Young logo" />
+										<article class="skill-card">
+											<div class="skill-card__header">
+												<div class="skill-card__icon">
+													<span class="icon solid fa-chart-bar"></span>
+												</div>
+												<h3>BI &amp; Data Visualization</h3>
 											</div>
-											<div class="career-entry-heading">
-												<p class="career-entry-organization">Ernst &amp; Young</p>
-												<h3>Senior Consultant, Business Consulting</h3>
-												<p class="career-entry-meta">Nov 2020 - Oct 2022</p>
-											</div>
-										</div>
-										<p class="career-entry-description">Analytics consultant for financial services clients, providing end-to-end solutions across marketing, business operations, and risk domains.</p>
-										<p class="career-entry-cta">View details &#8599;</p>
-									</a>
-								</div>
+											<ul class="skill-pill-list">
+												<li>Tableau</li>
+												<li>Qlik Sense</li>
+												<li>Power BI</li>
+												<li>Looker Studio</li>
+												<li>Excel (advanced)</li>
+												<li>Dashboard Design &amp; UX</li>
+												<li>KPI &amp; Metrics Design</li>
+											</ul>
+										</article>
 
-								<div class="career-entry">
-									<div class="career-entry-marker"></div>
-									<a class="career-entry-card career-entry-card--link" href="career-details.html#mu-sigma">
-										<div class="career-entry-header">
-											<div class="career-entry-logo">
-												<img src="images/logos/mu-sigma.jpg" alt="Mu Sigma logo" />
+										<article class="skill-card">
+											<div class="skill-card__header">
+												<div class="skill-card__icon">
+													<span class="icon solid fa-chart-line"></span>
+												</div>
+												<h3>Analytics &amp; Domains</h3>
 											</div>
-											<div class="career-entry-heading">
-												<p class="career-entry-organization">Mu Sigma</p>
-												<h3>Decision Scientist</h3>
-												<p class="career-entry-meta">Aug 2017 - Nov 2020</p>
+											<ul class="skill-pill-list">
+												<li>Customer Analytics</li>
+												<li>Product Analytics</li>
+												<li>Marketing Analytics</li>
+												<li>Risk &amp; Fraud Analytics</li>
+												<li>Operations &amp; Supply Chain Analytics</li>
+												<li>Digital/Web Analytics</li>
+											</ul>
+										</article>
+
+										<article class="skill-card">
+											<div class="skill-card__header">
+												<div class="skill-card__icon">
+													<span class="icon solid fa-briefcase"></span>
+												</div>
+												<h3>Business &amp; Strategic Skills</h3>
 											</div>
-										</div>
-										<p class="career-entry-description">Decision scientist for Fortune 500 clients tackling complex operational and analytics problems across insurance and retail industries.</p>
-										<p class="career-entry-cta">View details &#8599;</p>
-									</a>
+											<ul class="skill-pill-list">
+												<li>Stakeholder Management</li>
+												<li>Executive Data Storytelling</li>
+												<li>Agile Project Management &amp; Sprint Planning</li>
+												<li>Cross Functional Collaboration</li>
+												<li>Team Leadership</li>
+												<li>Analytics Strategy</li>
+												<li>Digital Banking</li>
+												<li>Digital Products &amp; Platforms</li>
+											</ul>
+										</article>
+									</div>
 								</div>
 							</div>
 						</section>
@@ -381,6 +519,18 @@
 												</a>
 											</div>
 										</div>
+
+										<div class="project-item">
+											<div class="project-item__number">
+												03
+											</div>
+											<div class="project-item__text">
+												<h4 class="project-item__title">Purchase Propensity Modeling for ShopNow</h4>
+												<p class="project-item__description">
+													Built and evaluated customer purchase propensity models to predict 30-day conversion likelihood, compare Ridge, Lasso, Random Forest, and XGBoost, and optimize campaign targeting using a cost-based business value framework.
+												</p>
+											</div>
+										</div>
 									</div>
 								</article>
 
@@ -393,13 +543,19 @@
 												01
 											</div>
 											<div class="project-item__text">
-												<h4 class="project-item__title">Soccer Transfer Market Performance Dashboard</h4>
+												<h4 class="project-item__title">Gies Sustainability Dashboard - THE Impact Rankings</h4>
 												<p class="project-item__description">
-													Designed a Tableau dashboard to analyze transfer fees, player performance, and club ROI across seasons, enabling comparison of recruitment strategies.
+													Led the development of the concept wireframe for an interactive web dashboard that benchmarks UIUC's Times Higher Education Impact Ranking and SDG performance against leading U.S. universities to guide evidence-based sustainability strategy.
 												</p>
 											</div>
 											<div class="project-item__action">
-												<a href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+												<a href="https://github.com/Aghil-hub/SustainabilitySolutions.github.io.git"
+												   class="button small"
+												   target="_blank"
+												   rel="noopener noreferrer">
+													View on GitHub
+												</a>
+												<a href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/"
 												   class="button small"
 												   target="_blank"
 												   rel="noopener noreferrer">
@@ -433,19 +589,13 @@
 												03
 											</div>
 											<div class="project-item__text">
-												<h4 class="project-item__title">Gies Sustainability Dashboard - THE Impact Rankings</h4>
+												<h4 class="project-item__title">Soccer Transfer Market Performance Dashboard</h4>
 												<p class="project-item__description">
-													Led the development of the concept wireframe for an interactive web dashboard that benchmarks UIUC's Times Higher Education Impact Ranking and SDG performance against leading U.S. universities to guide evidence-based sustainability strategy.
+													Designed a Tableau dashboard to analyze transfer fees, player performance, and club ROI across seasons, enabling comparison of recruitment strategies.
 												</p>
 											</div>
 											<div class="project-item__action">
-												<a href="https://github.com/Aghil-hub/SustainabilitySolutions.github.io.git"
-												   class="button small"
-												   target="_blank"
-												   rel="noopener noreferrer">
-													View on GitHub
-												</a>
-												<a href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/"
+												<a href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 												   class="button small"
 												   target="_blank"
 												   rel="noopener noreferrer">
@@ -457,88 +607,6 @@
 								</article>
 							</div>
 						</section>
-
-						<!-- Skills -->
-							<section id="skills" class="main special">
-								<header class="major">
-									<h2>Skills</h2>
-								</header>
-								<div class="skills-grid">
-									<article class="skill-card">
-										<div class="skill-card__header">
-											<div class="skill-card__icon">
-												<span class="icon solid fa-code"></span>
-											</div>
-											<h3>Programming &amp; Data Foundations</h3>
-										</div>
-										<ul class="skill-pill-list">
-											<li>SQL</li>
-											<li>Python</li>
-											<li>PySpark / Big-Data Querying</li>
-											<li>SAS</li>
-											<li>ETL/ELT</li>
-											<li>Data Preparation &amp; Modeling</li>
-											<li>Feature Engineering</li>
-											<li>Query Optimization</li>
-											<li>Data Quality &amp; Validation</li>
-										</ul>
-									</article>
-
-									<article class="skill-card">
-										<div class="skill-card__header">
-											<div class="skill-card__icon">
-												<span class="icon solid fa-chart-bar"></span>
-											</div>
-											<h3>BI &amp; Data Visualization</h3>
-										</div>
-										<ul class="skill-pill-list">
-											<li>Tableau</li>
-											<li>Qlik Sense</li>
-											<li>Power BI</li>
-											<li>Looker Studio</li>
-											<li>Excel (advanced)</li>
-											<li>Dashboard Design &amp; UX</li>
-											<li>KPI &amp; Metrics Design</li>
-										</ul>
-									</article>
-
-									<article class="skill-card">
-										<div class="skill-card__header">
-											<div class="skill-card__icon">
-												<span class="icon solid fa-chart-line"></span>
-											</div>
-											<h3>Analytics &amp; Domains</h3>
-										</div>
-										<ul class="skill-pill-list">
-											<li>Customer Analytics</li>
-											<li>Product Analytics</li>
-											<li>Marketing Analytics</li>											
-											<li>Risk &amp; Fraud Analytics</li>
-											<li>Operations &amp; Supply Chain Analytics</li>
-											<li>Digital/Web Analytics</li>
-										</ul>
-									</article>
-
-									<article class="skill-card">
-										<div class="skill-card__header">
-											<div class="skill-card__icon">
-												<span class="icon solid fa-briefcase"></span>
-											</div>
-											<h3>Business &amp; Strategic Skills</h3>
-										</div>
-										<ul class="skill-pill-list">
-											<li>Stakeholder Management</li>
-											<li>Executive Data Storytelling</li>
-											<li>Agile Project Management &amp; Sprint Planning</li>
-											<li>Cross Functional Collaboration</li>
-											<li>Team Leadership</li>
-											<li>Analytics Strategy</li>
-											<li>Digital Banking</li>
-											<li>Digital Products &amp; Platforms</li>
-										</ul>
-									</article>
-								</div>
-							</section>
 
 						<!-- Contact -->
 							<section id="contact" class="main special">
