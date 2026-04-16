@@ -181,11 +181,18 @@
 			.overview-layout {
 				display: grid;
 				grid-template-columns: minmax(0, 1.55fr) minmax(18rem, 1fr);
+				grid-template-areas: "career skills";
 				gap: 2rem;
 				align-items: start;
 			}
 			.overview-panel {
 				text-align: left;
+			}
+			#career.overview-panel {
+				grid-area: career;
+			}
+			#skills.overview-panel {
+				grid-area: skills;
 			}
 			.overview-panel header.major {
 				text-align: left;
@@ -220,6 +227,9 @@
 			@media screen and (max-width: 1100px) {
 				.overview-layout {
 					grid-template-columns: 1fr;
+					grid-template-areas:
+						"skills"
+						"career";
 				}
 				#skills.overview-panel .skills-grid {
 					grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -529,6 +539,14 @@
 												<p class="project-item__description">
 													Built and evaluated customer purchase propensity models to predict 30-day conversion likelihood, compare Ridge, Lasso, Random Forest, and XGBoost, and optimize campaign targeting using a cost-based business value framework.
 												</p>
+											</div>
+											<div class="project-item__action">
+												<a href="https://github.com/Aghil-hub/Purchase-propensity-model"
+												   class="button small"
+												   target="_blank"
+												   rel="noopener noreferrer">
+													View on GitHub
+												</a>
 											</div>
 										</div>
 									</div>
