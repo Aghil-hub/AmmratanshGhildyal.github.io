@@ -177,13 +177,66 @@
 			.career-entry-card--link:hover .career-entry-cta {
 				color: #2f4460;
 			}
-			.overview-layout {
-				display: grid;
-				grid-template-columns: minmax(0, 1.55fr) minmax(18rem, 1fr);
-				grid-template-areas: "career skills";
-				gap: 2rem;
-				align-items: start;
-			}
+									.featured-work-card {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 1.5rem;
+							padding: 1.5rem 1.65rem;
+							background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.98));
+							border: 1px solid rgba(63, 88, 122, 0.08);
+							border-radius: 1rem;
+							box-shadow: 0 1rem 2rem rgba(16, 24, 40, 0.10);
+						}
+						.featured-work-thumbnail {
+							width: min(280px, 100%);
+							border-radius: 1rem;
+							overflow: hidden;
+							background: #f7f9fc;
+							box-shadow: inset 0 0 0 1px rgba(63, 88, 122, 0.06);
+						}
+						.featured-work-thumbnail img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							display: block;
+						}
+						.featured-work-meta {
+							flex: 1;
+							min-width: 0;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							gap: 0.85rem;
+						}
+						.featured-work-meta h3 {
+							margin: 0;
+							font-size: 1.2rem;
+							font-weight: 700;
+							color: #2f4460;
+							line-height: 1.25;
+						}
+						.featured-work-meta p {
+							margin: 0;
+							line-height: 1.75;
+							color: rgba(34, 34, 34, 0.82);
+						}
+						@media screen and (max-width: 736px) {
+							.featured-work-card {
+								flex-direction: column;
+							}
+							.featured-work-thumbnail {
+								width: 100%;
+								min-height: 200px;
+							}
+						}
+
+						.overview-layout {
+							display: grid;
+							grid-template-columns: minmax(0, 1.55fr) minmax(18rem, 1fr);
+							grid-template-areas: "career skills";
+							gap: 2rem;
+							align-items: start;
+						}
 			.overview-panel {
 				text-align: left;
 			}
@@ -314,6 +367,18 @@
 								</div>
 
 							</section>
+
+						<section class="main featured-work">
+							<div class="featured-work-card">
+								<div class="featured-work-thumbnail">
+									<img src="images/MyImage2.jpg" alt="Claude prototype thumbnail" />
+								</div>
+								<div class="featured-work-meta">
+									<h3>Integrated research-and-drafting workspace for a legal and tax research platform (Claude Prototype)</h3>
+									<p>AI-powered drafting workspace that surfaces relevant authorities, auto-formats citations, and flags unsupported claims in real time as you write, replacing the fragmented "research here, draft there" workflow with one unified platform.</p>
+								</div>
+							</div>
+						</section>
 
 						<section class="main">
 							<div class="overview-layout">
