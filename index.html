@@ -227,17 +227,86 @@
 							box-shadow: 0 1rem 2rem rgba(16, 24, 40, 0.10);
 						}
 						.featured-work-thumbnail {
-							width: min(280px, 100%);
+							width: min(300px, 100%);
 							border-radius: 1rem;
 							overflow: hidden;
-							background: #f7f9fc;
-							box-shadow: inset 0 0 0 1px rgba(63, 88, 122, 0.06);
+							background: linear-gradient(135deg, #2f4460, #3f587a);
+							padding: 0.95rem;
+							display: flex;
+							align-items: center;
+							justify-content: center;
 						}
 						.featured-work-thumbnail img {
 							width: 100%;
-							height: 100%;
-							object-fit: cover;
+							height: auto;
+							max-height: 100%;
+							object-fit: contain;
+							border-radius: 0.5rem;
+							box-shadow: 0 0.6rem 1.4rem rgba(16, 24, 40, 0.30);
 							display: block;
+						}
+
+						/* Quick-scan stats band */
+						.stats-row {
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: center;
+							align-items: stretch;
+							gap: 1rem;
+							margin: 0;
+							padding: 0;
+							list-style: none;
+						}
+						.stats-row li {
+							flex: 1 1 0;
+							min-width: 9rem;
+							padding: 1.4rem 1rem;
+							border: 1px solid rgba(63, 88, 122, 0.10);
+							border-radius: 1rem;
+							background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.96));
+							box-shadow: 0 0.6rem 1.4rem rgba(16, 24, 40, 0.08);
+							text-align: center;
+						}
+						.stats-row .stat-value {
+							display: block;
+							font-size: 1.7rem;
+							font-weight: 700;
+							line-height: 1.1;
+							color: #3f587a;
+						}
+						.stats-row .stat-label {
+							display: block;
+							margin-top: 0.35rem;
+							font-size: 0.82rem;
+							letter-spacing: 0.04em;
+							color: rgba(34, 34, 34, 0.66);
+						}
+						/* Accent on primary CTAs */
+						#main .button.primary,
+						#contact .button.primary {
+							background-color: #1f8a7d;
+							box-shadow: none;
+						}
+						#main .button.primary:hover,
+						#contact .button.primary:hover {
+							background-color: #248f82;
+						}
+						#main .button.primary:active,
+						#contact .button.primary:active {
+							background-color: #1a7468;
+						}
+						@media screen and (max-width: 736px) {
+							.stats-row {
+								gap: 0.7rem;
+							}
+							.stats-row li {
+								flex-basis: calc(50% - 0.5rem);
+								min-width: 0;
+								padding: 1.1rem 0.6rem;
+							}
+							.stats-row .stat-value {
+								font-size: 1.35rem;
+							}
 						}
 						.featured-work-meta {
 							flex: 1;
@@ -327,8 +396,8 @@
 				.overview-layout {
 					grid-template-columns: 1fr;
 					grid-template-areas:
-						"skills"
-						"career";
+						"career"
+						"skills";
 				}
 				#skills.overview-panel .skills-grid {
 					grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -447,6 +516,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">About</a></li>
+							<li><a href="#career">Experience</a></li>
 							<li><a href="#projects">Projects</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
@@ -470,6 +540,15 @@
 								</div>
 
 							</section>
+
+						<section class="main stats-band">
+							<ul class="stats-row">
+								<li><span class="stat-value">23% YoY</span><span class="stat-label">digital account growth</span></li>
+								<li><span class="stat-value">88%</span><span class="stat-label">less manual effort</span></li>
+								<li><span class="stat-value">32%</span><span class="stat-label">lower account-freeze rate</span></li>
+								<li><span class="stat-value">$14.3B</span><span class="stat-label">in balances flagged for retention</span></li>
+							</ul>
+						</section>
 
 						<section class="main featured-work">
 							<div class="featured-work-card">
@@ -686,7 +765,7 @@
 												01
 											</div>
 											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
-												<i class="fas fa-diagram-project"></i>
+												<i class="fas fa-circle-nodes"></i>
 											</div>
 											<div class="project-item__text">
 												<h4 class="project-item__title">Customer Segmentation for ShopNow (K-Means Clustering)</h4>
@@ -709,7 +788,7 @@
 												02
 											</div>
 											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
-												<i class="fas fa-diagram-project"></i>
+												<i class="fas fa-chart-line"></i>
 											</div>
 											<div class="project-item__text">
 												<h4 class="project-item__title">Daily Demand Forecasting for a Logistics Firm (Linear Regression vs Random Forest)</h4>
@@ -732,7 +811,7 @@
 												03
 											</div>
 											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
-												<i class="fas fa-diagram-project"></i>
+												<i class="fas fa-bullseye"></i>
 											</div>
 											<div class="project-item__text">
 												<h4 class="project-item__title">Purchase Propensity Modeling for ShopNow</h4>
@@ -774,7 +853,7 @@
 													View on GitHub
 												</a>
 												<a href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/"
-												   class="button small"
+												   class="button small primary"
 												   target="_blank"
 												   rel="noopener noreferrer">
 													View Dashboard
@@ -794,7 +873,7 @@
 											</div>
 											<div class="project-item__action">
 												<a href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-												   class="button small"
+												   class="button small primary"
 												   target="_blank"
 												   rel="noopener noreferrer">
 													View Dashboard
@@ -814,7 +893,7 @@
 											</div>
 											<div class="project-item__action">
 												<a href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-												   class="button small"
+												   class="button small primary"
 												   target="_blank"
 												   rel="noopener noreferrer">
 													View Dashboard
