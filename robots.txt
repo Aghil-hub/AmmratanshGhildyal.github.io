@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aghil-hub.github.io/AmmratanshGhildyal.github.io/sitemap.xml
