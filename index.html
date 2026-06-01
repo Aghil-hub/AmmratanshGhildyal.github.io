@@ -366,6 +366,28 @@
 				background: #ffffff;
 			}
 			#projects .project-item__thumb img { width: 100%; height: auto; display: block; }
+			/* Icon variant for ML / non-dashboard projects */
+			#projects .project-item--has-icon {
+				grid-template-columns: auto minmax(0, 1fr) auto;
+				grid-template-areas:
+					"number text   thumb"
+					".      action thumb";
+			}
+			#projects .project-item__thumb--icon {
+				align-self: center;
+				justify-self: end;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 3.6rem;
+				height: 3.6rem;
+				border-radius: 0.9rem;
+				overflow: visible;
+				background: rgba(63, 88, 122, 0.08);
+				box-shadow: none;
+				color: #3f587a;
+			}
+			#projects .project-item__thumb--icon i { font-size: 1.5rem; line-height: 1; }
 			@media screen and (max-width: 736px) {
 				#projects .project-item--has-thumb {
 					grid-template-columns: auto 1fr;
@@ -374,6 +396,13 @@
 						"number text"
 						".      action";
 				}
+				#projects .project-item--has-icon {
+					grid-template-columns: auto 1fr;
+					grid-template-areas:
+						"number text"
+						".      action";
+				}
+				#projects .project-item__thumb--icon { display: none; }
 			}
 		</style>
 	</head>
@@ -609,13 +638,13 @@
 								<article class="project-card">
 									<h3 class="project-card__heading">Machine Learning &amp; Modeling</h3>
 									<div class="project-card__list">
-										<div class="project-item project-item--has-thumb">
+										<div class="project-item project-item--has-icon">
 											<div class="project-item__number">
 												01
 											</div>
-											<a class="project-item__thumb" href="https://github.com/Aghil-hub/Customer_Segmentation" target="_blank" rel="noopener noreferrer">
-												<img src="images/projects/customer-segmentation.png" alt="Customer segmentation cluster plot" loading="lazy" />
-											</a>
+											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
+												<i class="fas fa-diagram-project"></i>
+											</div>
 											<div class="project-item__text">
 												<h4 class="project-item__title">Customer Segmentation for ShopNow (K-Means Clustering)</h4>
 												<p class="project-item__description">
@@ -632,13 +661,13 @@
 											</div>
 										</div>
 
-										<div class="project-item project-item--has-thumb">
+										<div class="project-item project-item--has-icon">
 											<div class="project-item__number">
 												02
 											</div>
-											<a class="project-item__thumb" href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics" target="_blank" rel="noopener noreferrer">
-												<img src="images/projects/demand-forecasting.png" alt="Random forest feature importance chart" loading="lazy" />
-											</a>
+											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
+												<i class="fas fa-diagram-project"></i>
+											</div>
 											<div class="project-item__text">
 												<h4 class="project-item__title">Daily Demand Forecasting for a Logistics Firm (Linear Regression vs Random Forest)</h4>
 												<p class="project-item__description">
@@ -655,13 +684,13 @@
 											</div>
 										</div>
 
-										<div class="project-item project-item--has-thumb">
+										<div class="project-item project-item--has-icon">
 											<div class="project-item__number">
 												03
 											</div>
-											<a class="project-item__thumb" href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">
-												<img src="images/projects/purchase-propensity.png" alt="Purchase propensity model business value chart" loading="lazy" />
-											</a>
+											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
+												<i class="fas fa-diagram-project"></i>
+											</div>
 											<div class="project-item__text">
 												<h4 class="project-item__title">Purchase Propensity Modeling for ShopNow</h4>
 												<p class="project-item__description">
