@@ -557,6 +557,28 @@
 			/* Clickable project titles */
 			#projects .project-item__title a { color: inherit; text-decoration: none; }
 			#projects .project-item__title a:hover { color: #3f587a; text-decoration: underline; }
+			/* Featured AI prototypes: two-up grid */
+			.featured-work-grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1.5rem;
+				align-items: stretch;
+			}
+			.featured-work-grid .featured-work-card {
+				flex-direction: column;
+				height: 100%;
+			}
+			.featured-work-grid .featured-work-thumbnail {
+				width: 100%;
+			}
+			a.featured-work-thumbnail { text-decoration: none; }
+			.featured-work-meta .button {
+				align-self: flex-start;
+				margin-top: 0.4rem;
+			}
+			@media screen and (max-width: 980px) {
+				.featured-work-grid { grid-template-columns: 1fr; }
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -580,6 +602,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">About</a></li>
+							<li><a href="#prototypes">Prototypes</a></li>
 							<li><a href="#career">Experience</a></li>
 							<li><a href="#projects">Projects</a></li>
 							<li><a href="#contact">Contact</a></li>
@@ -614,15 +637,30 @@
 							</ul>
 						</section>
 
-						<section class="main featured-work">
-							<div class="featured-work-card">
-								<div class="featured-work-thumbnail">
-									<img src="images/Lexiflow.png" alt="LexiFlow prototype thumbnail" />
+						<section id="prototypes" class="main featured-work">
+							<header class="major">
+								<h2>AI Prototypes</h2>
+							</header>
+							<div class="featured-work-grid">
+								<div class="featured-work-card">
+									<a class="featured-work-thumbnail" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">
+										<img src="images/Lexiflow.png" alt="LexiFlow prototype thumbnail" />
+									</a>
+									<div class="featured-work-meta">
+										<h3><a href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">Integrated research-and-drafting workspace for a legal and tax research platform (Claude Prototype)</a></h3>
+										<p>Flags unsupported claims and formats citations the moment you write them, with the relevant authorities surfaced inline. Collapses the "research here, draft there" scramble into one workspace for legal and tax work.</p>
+										<a class="button small primary" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">View prototype</a>
+									</div>
 								</div>
-								<div class="featured-work-meta">
-									<p class="featured-label">Featured</p>
-								<h3><a href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">Integrated research-and-drafting workspace for a legal and tax research platform (Claude Prototype)</a></h3>
-								<p>AI-powered drafting workspace that surfaces relevant authorities, auto-formats citations, and flags unsupported claims in real time as you write, replacing the fragmented "research here, draft there" workflow with one unified platform.</p>
+								<div class="featured-work-card">
+									<a class="featured-work-thumbnail" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">
+										<img src="images/Researchflow.png" alt="ResearchFlow prototype thumbnail" />
+									</a>
+									<div class="featured-work-meta">
+										<h3><a href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">Workflow orchestrator for recurring tax and compliance filings (Claude Prototype)</a></h3>
+										<p>Turns recurring tax and compliance filings into automated pipelines from intake to delivery, with role-based handoffs. Replaces one-off, ad hoc research with templated, repeatable workflows.</p>
+										<a class="button small primary" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">View prototype</a>
+									</div>
 								</div>
 							</div>
 						</section>
