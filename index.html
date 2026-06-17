@@ -284,6 +284,9 @@
 							letter-spacing: 0.04em;
 							color: rgba(34, 34, 34, 0.66);
 						}
+						.stats-row--experience {
+							margin-bottom: 2.4rem;
+						}
 						/* Accent on primary CTAs */
 						#main .button.primary,
 						#contact .button.primary {
@@ -575,6 +578,55 @@
 				width: 100%;
 			}
 			a.featured-work-thumbnail { text-decoration: none; }
+			#projects > header.major {
+				text-align: center;
+			}
+			#projects > header.major h2:after {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.featured-work-thumbnail.project-image-placeholder {
+				aspect-ratio: 16 / 10;
+				min-height: 180px;
+				color: rgba(255, 255, 255, 0.92);
+				text-align: center;
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+			}
+			.project-image-placeholder__content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 0.65rem;
+				width: 100%;
+				height: 100%;
+				border: 1px dashed rgba(255, 255, 255, 0.42);
+				border-radius: 0.7rem;
+				padding: 1rem;
+			}
+			.project-image-placeholder__content i {
+				font-size: 1.75rem;
+				line-height: 1;
+			}
+			.project-image-placeholder__content span {
+				font-size: 0.82rem;
+				font-weight: 700;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+			}
+			.project-category {
+				margin-top: 2.25rem;
+				text-align: left;
+			}
+			.project-category:first-of-type {
+				margin-top: 0;
+			}
+			.project-category__heading {
+				margin: 0 0 1rem 0;
+				color: #2f4460;
+				font-size: 1.2rem;
+				font-weight: 700;
+			}
 			.featured-work-meta .button {
 				align-self: flex-start;
 				margin-top: 0.4rem;
@@ -615,10 +667,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">About</a></li>
-							<li><a href="#prototypes">Prototypes</a></li>
-							<li><a href="#career">Experience</a></li>
-							<li><a href="#projects">Projects</a></li>
+							<li><a href="#projects" class="active">Projects</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#intro">About</a></li>
+							<li><a href="#recognition">Recognition</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -626,60 +678,118 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About Me</h2>
-										</header>
-										<p>A data-driven problem solver with 8 years of experience combining analytics, storytelling, and business acumen to drive smarter business decisions. I began my career in consulting and decision science, working with Fortune 500 clients across insurance, retail, and financial services industries. I then moved into banking, leading analytics for digital products and platforms at one of the largest private sector banks in India.
-										</p>
-										<p>I like getting into the details and figuring out how to make things better. I am naturally curious and tend to think in terms of improvements and possibilities. Recently, I have been experimenting with GenAI and prototyping ideas to see how quickly I can turn a thought into something tangible. Currently completing my MS in Business Analytics at the University of Illinois Urbana-Champaign.</p>
-									</div>
-									<span class="image"><img src="images/MyImage.jpg" alt="Ammratansh Ghildyal" /></span>
-								</div>
-
-							</section>
-
-						<section class="main stats-band">
-							<ul class="stats-row">
-								<li><span class="stat-value">23% YoY</span><span class="stat-label">digital account growth</span></li>
-								<li><span class="stat-value">88%</span><span class="stat-label">less manual loan validation</span></li>
-								<li><span class="stat-value">32%</span><span class="stat-label">lower account-freeze rate</span></li>
-								<li><span class="stat-value">$14.3B</span><span class="stat-label">in balances flagged for retention</span></li>
-							</ul>
-						</section>
-
-						<section id="prototypes" class="main featured-work">
+						<section id="projects" class="main featured-work">
 							<header class="major">
-								<h2>AI Prototypes</h2>
+								<h2>Projects</h2>
 							</header>
-							<div class="featured-work-grid">
-								<div class="featured-work-card">
-									<a class="featured-work-thumbnail" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">
-										<img src="images/Lexiflow.png" alt="LexiFlow prototype thumbnail" />
-									</a>
-									<div class="featured-work-meta">
-										<h3><a href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">Integrated research-and-drafting workspace for a legal and tax research platform (Claude Prototype)</a></h3>
-										<p>Flags unsupported claims and formats citations the moment you write them, with the relevant authorities surfaced inline. Collapses the "research here, draft there" scramble into one workspace for legal and tax work.</p>
-										<a class="button small primary" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">View prototype</a>
+
+							<div id="project-prototypes" class="project-category">
+								<h3 class="project-category__heading">AI Prototypes</h3>
+								<div class="featured-work-grid">
+									<div class="featured-work-card">
+										<a class="featured-work-thumbnail" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">
+											<img src="images/Lexiflow.png" alt="LexiFlow prototype thumbnail" />
+										</a>
+										<div class="featured-work-meta">
+											<h3><a href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">Integrated research-and-drafting workspace for a legal and tax research platform (Claude Prototype)</a></h3>
+											<p>Flags unsupported claims and formats citations the moment you write them, with the relevant authorities surfaced inline. Collapses the "research here, draft there" scramble into one workspace for legal and tax work.</p>
+											<a class="button small primary" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">View prototype</a>
+										</div>
+									</div>
+									<div class="featured-work-card">
+										<a class="featured-work-thumbnail" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">
+											<img src="images/Researchflow.png" alt="ResearchFlow prototype thumbnail" />
+										</a>
+										<div class="featured-work-meta">
+											<h3><a href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">Workflow orchestrator for recurring tax and compliance filings (Claude Prototype)</a></h3>
+											<p>Turns recurring tax and compliance filings into automated pipelines from intake to delivery, with role-based handoffs. Replaces one-off, ad hoc research with templated, repeatable workflows.</p>
+											<a class="button small primary" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">View prototype</a>
+										</div>
 									</div>
 								</div>
-								<div class="featured-work-card">
-									<a class="featured-work-thumbnail" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">
-										<img src="images/Researchflow.png" alt="ResearchFlow prototype thumbnail" />
-									</a>
-									<div class="featured-work-meta">
-										<h3><a href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">Workflow orchestrator for recurring tax and compliance filings (Claude Prototype)</a></h3>
-										<p>Turns recurring tax and compliance filings into automated pipelines from intake to delivery, with role-based handoffs. Replaces one-off, ad hoc research with templated, repeatable workflows.</p>
-										<a class="button small primary" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">View prototype</a>
+							</div>
+
+							<div id="project-ml" class="project-category">
+								<h3 class="project-category__heading">Machine Learning &amp; Modeling</h3>
+								<div class="featured-work-grid">
+									<div class="featured-work-card">
+										<a class="featured-work-thumbnail project-image-placeholder" href="https://github.com/Aghil-hub/Customer_Segmentation" target="_blank" rel="noopener noreferrer">
+											<span class="project-image-placeholder__content"><i class="fas fa-circle-nodes"></i><span>Project image</span></span>
+										</a>
+										<div class="featured-work-meta">
+											<h3><a href="https://github.com/Aghil-hub/Customer_Segmentation" target="_blank" rel="noopener noreferrer">Customer Segmentation for ShopNow (K-Means Clustering)</a></h3>
+											<p>Finds the customers worth spending on, VIPs and at-risk, so campaigns target the right groups instead of the whole list. <em>(K-Means, RFM)</em></p>
+											<a class="button small" href="https://github.com/Aghil-hub/Customer_Segmentation" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+										</div>
+									</div>
+									<div class="featured-work-card">
+										<a class="featured-work-thumbnail project-image-placeholder" href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics.git" target="_blank" rel="noopener noreferrer">
+											<span class="project-image-placeholder__content"><i class="fas fa-chart-line"></i><span>Project image</span></span>
+										</a>
+										<div class="featured-work-meta">
+											<h3><a href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics.git" target="_blank" rel="noopener noreferrer">Daily Demand Forecasting for a Logistics Firm (Linear Regression vs Random Forest)</a></h3>
+											<p>Forecasts daily demand for a logistics firm; settles random forest vs. plain regression across 1,000 train-test splits, not one lucky run. <em>(scikit-learn)</em></p>
+											<a class="button small" href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics.git" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+										</div>
+									</div>
+									<div class="featured-work-card">
+										<a class="featured-work-thumbnail project-image-placeholder" href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">
+											<span class="project-image-placeholder__content"><i class="fas fa-bullseye"></i><span>Project image</span></span>
+										</a>
+										<div class="featured-work-meta">
+											<h3><a href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">Purchase Propensity Modeling for ShopNow</a></h3>
+											<p>Scores 30-day purchase propensity, then picks who to target by cost vs. payoff, not model accuracy. <em>(Lasso &rarr; XGBoost)</em></p>
+											<a class="button small" href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="project-bi" class="project-category">
+								<h3 class="project-category__heading">Business Intelligence &amp; Dashboards</h3>
+								<div class="featured-work-grid">
+									<div class="featured-work-card">
+										<a class="featured-work-thumbnail project-image-placeholder" href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/" target="_blank" rel="noopener noreferrer">
+											<span class="project-image-placeholder__content"><i class="fas fa-chart-column"></i><span>Project image</span></span>
+										</a>
+										<div class="featured-work-meta">
+											<h3><a href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/" target="_blank" rel="noopener noreferrer">Gies Sustainability Dashboard - THE Impact Rankings</a></h3>
+											<p>Third place, 2026 case competition. Benchmarks UIUC's sustainability ranking against top U.S. schools; I led the concept wireframe. <em>(web dashboard)</em></p>
+											<a class="button small" href="https://github.com/Aghil-hub/SustainabilitySolutions.github.io.git" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+											<a class="button small primary" href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/" target="_blank" rel="noopener noreferrer">View Dashboard</a>
+										</div>
+									</div>
+									<div class="featured-work-card">
+										<a class="featured-work-thumbnail project-image-placeholder" href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">
+											<span class="project-image-placeholder__content"><i class="fas fa-chart-bar"></i><span>Project image</span></span>
+										</a>
+										<div class="featured-work-meta">
+											<h3><a href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">A/B Testing: User Behaviour &amp; Conversion Performance Dashboard</a></h3>
+											<p>Designed a Tableau dashboard to analyze conversion rates, user engagement, and regional lift across Test and Control groups, enabling data-driven evaluation of experiment outcomes.</p>
+											<a class="button small primary" href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">View Dashboard</a>
+										</div>
+									</div>
+									<div class="featured-work-card">
+										<a class="featured-work-thumbnail project-image-placeholder" href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">
+											<span class="project-image-placeholder__content"><i class="fas fa-futbol"></i><span>Project image</span></span>
+										</a>
+										<div class="featured-work-meta">
+											<h3><a href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">Soccer Transfer Market Performance Dashboard</a></h3>
+											<p>Designed a Tableau dashboard to analyze transfer fees, player performance, and club ROI across seasons, enabling comparison of recruitment strategies.</p>
+											<a class="button small primary" href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">View Dashboard</a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</section>
 
-						<section class="main">
+						<section id="experience" class="main">
+							<ul class="stats-row stats-row--experience">
+								<li><span class="stat-value">23% YoY</span><span class="stat-label">digital account growth</span></li>
+								<li><span class="stat-value">88%</span><span class="stat-label">less manual loan validation</span></li>
+								<li><span class="stat-value">32%</span><span class="stat-label">lower account-freeze rate</span></li>
+								<li><span class="stat-value">$14.3B</span><span class="stat-label">in balances flagged for retention</span></li>
+							</ul>
 							<div class="overview-layout">
 								<div id="career" class="overview-panel">
 									<header class="major">
@@ -866,160 +976,21 @@
 							</div>
 						</section>
 
-						<section id="projects" class="main special">
-							<header class="major">
-								<h2>Projects</h2>
-							</header>
-
-							<div class="projects-grid">
-								<!-- Card 1: Machine Learning & Modeling -->
-								<article class="project-card">
-									<h3 class="project-card__heading">Machine Learning &amp; Modeling</h3>
-									<div class="project-card__list">
-										<div class="project-item project-item--has-icon">
-											<div class="project-item__number">
-												01
-											</div>
-											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
-												<i class="fas fa-circle-nodes"></i>
-											</div>
-											<div class="project-item__text">
-												<h4 class="project-item__title"><a href="https://github.com/Aghil-hub/Customer_Segmentation" target="_blank" rel="noopener noreferrer">Customer Segmentation for ShopNow (K-Means Clustering)</a></h4>
-												<p class="project-item__description">
-													Finds the customers worth spending on, VIPs and at-risk, so campaigns target the right groups instead of the whole list. <em>(K-Means, RFM)</em>
-												</p>
-											</div>
-											<div class="project-item__action">
-												<a href="https://github.com/Aghil-hub/Customer_Segmentation"
-												   class="button small"
-												   target="_blank"
-												   rel="noopener noreferrer">
-													View on GitHub
-												</a>
-											</div>
-										</div>
-
-										<div class="project-item project-item--has-icon">
-											<div class="project-item__number">
-												02
-											</div>
-											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
-												<i class="fas fa-chart-line"></i>
-											</div>
-											<div class="project-item__text">
-												<h4 class="project-item__title"><a href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics.git" target="_blank" rel="noopener noreferrer">Daily Demand Forecasting for a Logistics Firm (Linear Regression vs Random Forest)</a></h4>
-												<p class="project-item__description">
-													Forecasts daily demand for a logistics firm; settles random forest vs. plain regression across 1,000 train-test splits, not one lucky run. <em>(scikit-learn)</em>
-												</p>
-											</div>
-											<div class="project-item__action">
-												<a href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics.git"
-												   class="button small"
-												   target="_blank"
-												   rel="noopener noreferrer">
-													View on GitHub
-												</a>
-											</div>
-										</div>
-
-										<div class="project-item project-item--has-icon">
-											<div class="project-item__number">
-												03
-											</div>
-											<div class="project-item__thumb project-item__thumb--icon" aria-hidden="true">
-												<i class="fas fa-bullseye"></i>
-											</div>
-											<div class="project-item__text">
-												<h4 class="project-item__title"><a href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">Purchase Propensity Modeling for ShopNow</a></h4>
-												<p class="project-item__description">
-													Scores 30-day purchase propensity, then picks who to target by cost vs. payoff, not model accuracy. <em>(Lasso &rarr; XGBoost)</em>
-												</p>
-											</div>
-											<div class="project-item__action">
-												<a href="https://github.com/Aghil-hub/Purchase-propensity-model"
-												   class="button small"
-												   target="_blank"
-												   rel="noopener noreferrer">
-													View on GitHub
-												</a>
-											</div>
-										</div>
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About Me</h2>
+										</header>
+										<p>A data-driven problem solver with 8 years of experience combining analytics, storytelling, and business acumen to drive smarter business decisions. I began my career in consulting and decision science, working with Fortune 500 clients across insurance, retail, and financial services industries. I then moved into banking, leading analytics for digital products and platforms at one of the largest private sector banks in India.
+										</p>
+										<p>I like getting into the details and figuring out how to make things better. I am naturally curious and tend to think in terms of improvements and possibilities. Recently, I have been experimenting with GenAI and prototyping ideas to see how quickly I can turn a thought into something tangible. Currently completing my MS in Business Analytics at the University of Illinois Urbana-Champaign.</p>
 									</div>
-								</article>
+									<span class="image"><img src="images/MyImage.jpg" alt="Ammratansh Ghildyal" /></span>
+								</div>
 
-								<!-- Card 2: Business Intelligence & Dashboards -->
-								<article class="project-card">
-									<h3 class="project-card__heading">Business Intelligence &amp; Dashboards</h3>
-									<div class="project-card__list">
-										<div class="project-item">
-											<div class="project-item__number">
-												01
-											</div>
-											<div class="project-item__text">
-												<h4 class="project-item__title"><a href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/" target="_blank" rel="noopener noreferrer">Gies Sustainability Dashboard - THE Impact Rankings</a></h4>
-												<p class="project-item__description">
-													Third place, 2026 case competition. Benchmarks UIUC's sustainability ranking against top U.S. schools; I led the concept wireframe. <em>(web dashboard)</em>
-												</p>
-											</div>
-											<div class="project-item__action">
-												<a href="https://github.com/Aghil-hub/SustainabilitySolutions.github.io.git"
-												   class="button small"
-												   target="_blank"
-												   rel="noopener noreferrer">
-													View on GitHub
-												</a>
-												<a href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/"
-												   class="button small primary"
-												   target="_blank"
-												   rel="noopener noreferrer">
-													View Dashboard
-												</a>
-											</div>
-										</div>
-
-										<div class="project-item">
-											<div class="project-item__number">
-												02
-											</div>
-											<div class="project-item__text">
-												<h4 class="project-item__title"><a href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">A/B Testing: User Behaviour &amp; Conversion Performance Dashboard</a></h4>
-												<p class="project-item__description">
-													Designed a Tableau dashboard to analyze conversion rates, user engagement, and regional lift across Test and Control groups, enabling data-driven evaluation of experiment outcomes.
-												</p>
-											</div>
-											<div class="project-item__action">
-												<a href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-												   class="button small primary"
-												   target="_blank"
-												   rel="noopener noreferrer">
-													View Dashboard
-												</a>
-											</div>
-										</div>
-
-										<div class="project-item">
-											<div class="project-item__number">
-												03
-											</div>
-											<div class="project-item__text">
-												<h4 class="project-item__title"><a href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">Soccer Transfer Market Performance Dashboard</a></h4>
-												<p class="project-item__description">
-													Designed a Tableau dashboard to analyze transfer fees, player performance, and club ROI across seasons, enabling comparison of recruitment strategies.
-												</p>
-											</div>
-											<div class="project-item__action">
-												<a href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-												   class="button small primary"
-												   target="_blank"
-												   rel="noopener noreferrer">
-													View Dashboard
-												</a>
-											</div>
-										</div>
-									</div>
-								</article>
-							</div>
-						</section>
+							</section>
 
 						<!-- Recognition -->
 							<section id="recognition" class="main special">
