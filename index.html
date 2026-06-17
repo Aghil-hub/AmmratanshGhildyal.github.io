@@ -578,10 +578,26 @@
 				width: 100%;
 			}
 			a.featured-work-thumbnail { text-decoration: none; }
+			#projects .featured-work-meta h3 a {
+				border-bottom: 1px solid rgba(63, 88, 122, 0.32);
+				color: inherit;
+				text-decoration: none;
+			}
+			#projects .featured-work-meta h3 a:hover {
+				border-bottom-color: #3f587a;
+				color: #3f587a;
+			}
 			#projects > header.major {
 				text-align: center;
 			}
 			#projects > header.major h2:after {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#experience > header.major {
+				text-align: center;
+			}
+			#experience > header.major h2:after {
 				margin-left: auto;
 				margin-right: auto;
 			}
@@ -693,7 +709,7 @@
 										<div class="featured-work-meta">
 											<h3><a href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">Integrated research-and-drafting workspace for a legal and tax research platform (Claude Prototype)</a></h3>
 											<p>Flags unsupported claims and formats citations the moment you write them, with the relevant authorities surfaced inline. Collapses the "research here, draft there" scramble into one workspace for legal and tax work.</p>
-											<a class="button small primary" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">View prototype</a>
+											<a class="button small primary" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">View</a>
 										</div>
 									</div>
 									<div class="featured-work-card">
@@ -703,7 +719,7 @@
 										<div class="featured-work-meta">
 											<h3><a href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">Workflow orchestrator for recurring tax and compliance filings (Claude Prototype)</a></h3>
 											<p>Turns recurring tax and compliance filings into automated pipelines from intake to delivery, with role-based handoffs. Replaces one-off, ad hoc research with templated, repeatable workflows.</p>
-											<a class="button small primary" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">View prototype</a>
+											<a class="button small primary" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">View</a>
 										</div>
 									</div>
 								</div>
@@ -713,8 +729,8 @@
 								<h3 class="project-category__heading">Machine Learning &amp; Modeling</h3>
 								<div class="featured-work-grid">
 									<div class="featured-work-card">
-										<a class="featured-work-thumbnail project-image-placeholder" href="https://github.com/Aghil-hub/Customer_Segmentation" target="_blank" rel="noopener noreferrer">
-											<span class="project-image-placeholder__content"><i class="fas fa-circle-nodes"></i><span>Project image</span></span>
+										<a class="featured-work-thumbnail" href="https://github.com/Aghil-hub/Customer_Segmentation" target="_blank" rel="noopener noreferrer">
+											<img src="images/projects/customer-segmentation.png" alt="Customer segmentation project preview" />
 										</a>
 										<div class="featured-work-meta">
 											<h3><a href="https://github.com/Aghil-hub/Customer_Segmentation" target="_blank" rel="noopener noreferrer">Customer Segmentation for ShopNow (K-Means Clustering)</a></h3>
@@ -723,8 +739,8 @@
 										</div>
 									</div>
 									<div class="featured-work-card">
-										<a class="featured-work-thumbnail project-image-placeholder" href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics.git" target="_blank" rel="noopener noreferrer">
-											<span class="project-image-placeholder__content"><i class="fas fa-chart-line"></i><span>Project image</span></span>
+										<a class="featured-work-thumbnail" href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics.git" target="_blank" rel="noopener noreferrer">
+											<img src="images/projects/daily-demand-forecasting.png" alt="Daily demand forecasting project preview" />
 										</a>
 										<div class="featured-work-meta">
 											<h3><a href="https://github.com/Aghil-hub/Daily-demand-forecasting-logistics.git" target="_blank" rel="noopener noreferrer">Daily Demand Forecasting for a Logistics Firm (Linear Regression vs Random Forest)</a></h3>
@@ -733,8 +749,8 @@
 										</div>
 									</div>
 									<div class="featured-work-card">
-										<a class="featured-work-thumbnail project-image-placeholder" href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">
-											<span class="project-image-placeholder__content"><i class="fas fa-bullseye"></i><span>Project image</span></span>
+										<a class="featured-work-thumbnail" href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">
+											<img src="images/projects/purchase-propensity.png" alt="Purchase propensity project preview" />
 										</a>
 										<div class="featured-work-meta">
 											<h3><a href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">Purchase Propensity Modeling for ShopNow</a></h3>
@@ -749,8 +765,8 @@
 								<h3 class="project-category__heading">Business Intelligence &amp; Dashboards</h3>
 								<div class="featured-work-grid">
 									<div class="featured-work-card">
-										<a class="featured-work-thumbnail project-image-placeholder" href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/" target="_blank" rel="noopener noreferrer">
-											<span class="project-image-placeholder__content"><i class="fas fa-chart-column"></i><span>Project image</span></span>
+										<a class="featured-work-thumbnail" href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/" target="_blank" rel="noopener noreferrer">
+											<img src="images/projects/gies-sustainability-dashboard.png" alt="Gies sustainability dashboard preview" />
 										</a>
 										<div class="featured-work-meta">
 											<h3><a href="https://aghil-hub.github.io/SustainabilitySolutions.github.io/" target="_blank" rel="noopener noreferrer">Gies Sustainability Dashboard - THE Impact Rankings</a></h3>
@@ -760,8 +776,8 @@
 										</div>
 									</div>
 									<div class="featured-work-card">
-										<a class="featured-work-thumbnail project-image-placeholder" href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">
-											<span class="project-image-placeholder__content"><i class="fas fa-chart-bar"></i><span>Project image</span></span>
+										<a class="featured-work-thumbnail" href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">
+											<img src="images/projects/ab-testing-dashboard.png" alt="A/B testing dashboard preview" />
 										</a>
 										<div class="featured-work-meta">
 											<h3><a href="https://public.tableau.com/views/ABTesting_17739812520550/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">A/B Testing: User Behaviour &amp; Conversion Performance Dashboard</a></h3>
@@ -770,8 +786,8 @@
 										</div>
 									</div>
 									<div class="featured-work-card">
-										<a class="featured-work-thumbnail project-image-placeholder" href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">
-											<span class="project-image-placeholder__content"><i class="fas fa-futbol"></i><span>Project image</span></span>
+										<a class="featured-work-thumbnail" href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">
+											<img src="images/projects/soccer-transfer-dashboard.png" alt="Soccer transfer dashboard preview" />
 										</a>
 										<div class="featured-work-meta">
 											<h3><a href="https://public.tableau.com/views/Transfermarketanalysis/OverallEULeague?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener noreferrer">Soccer Transfer Market Performance Dashboard</a></h3>
@@ -784,6 +800,9 @@
 						</section>
 
 						<section id="experience" class="main">
+							<header class="major">
+								<h2>Professional Experience</h2>
+							</header>
 							<ul class="stats-row stats-row--experience">
 								<li><span class="stat-value">23% YoY</span><span class="stat-label">digital account growth</span></li>
 								<li><span class="stat-value">88%</span><span class="stat-label">less manual loan validation</span></li>
