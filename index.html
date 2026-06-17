@@ -579,12 +579,12 @@
 			}
 			a.featured-work-thumbnail { text-decoration: none; }
 			#projects .featured-work-meta h3 a {
-				border-bottom: 1px solid rgba(63, 88, 122, 0.32);
+				border-bottom: 0;
 				color: inherit;
 				text-decoration: none;
 			}
 			#projects .featured-work-meta h3 a:hover {
-				border-bottom-color: #3f587a;
+				border-bottom: 0;
 				color: #3f587a;
 			}
 			#projects > header.major {
@@ -631,17 +631,63 @@
 				text-transform: uppercase;
 			}
 			.project-category {
-				margin-top: 2.25rem;
+				position: relative;
+				margin-top: 3.2rem;
+				padding: 1.35rem;
+				border: 1px solid rgba(63, 88, 122, 0.16);
+				border-left: 0.35rem solid var(--project-category-accent, #3f587a);
+				border-radius: 0.85rem;
+				background: linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.12));
 				text-align: left;
 			}
 			.project-category:first-of-type {
 				margin-top: 0;
 			}
+			.project-category:nth-of-type(1) {
+				--project-category-color: #315f8f;
+				--project-category-accent: #7fb2df;
+				--project-category-glow: rgba(127, 178, 223, 0.20);
+			}
+			.project-category:nth-of-type(2) {
+				--project-category-color: #2f7a73;
+				--project-category-accent: #8cc9c4;
+				--project-category-glow: rgba(140, 201, 196, 0.22);
+			}
+			.project-category:nth-of-type(3) {
+				--project-category-color: #74518d;
+				--project-category-accent: #c4a4d8;
+				--project-category-glow: rgba(196, 164, 216, 0.20);
+			}
 			.project-category__heading {
-				margin: 0 0 1rem 0;
-				color: #2f4460;
-				font-size: 1.2rem;
+				display: flex;
+				align-items: center;
+				gap: 0.75rem;
+				margin: 0 0 1.35rem 0;
+				color: var(--project-category-color, #3f587a);
+				font-size: 1.5rem;
 				font-weight: 700;
+				line-height: 1.2;
+			}
+			.project-category__heading:before {
+				content: "";
+				flex: 0 0 auto;
+				width: 0.72rem;
+				height: 0.72rem;
+				border-radius: 50%;
+				background: var(--project-category-accent, #8cc9c4);
+				box-shadow:
+					0 0 0 0.32rem var(--project-category-glow, rgba(140, 201, 196, 0.20)),
+					0 0.35rem 0.85rem var(--project-category-glow, rgba(140, 201, 196, 0.20));
+			}
+			@media screen and (max-width: 736px) {
+				.project-category {
+					margin-top: 2.2rem;
+					padding: 1.05rem;
+					border-radius: 0.7rem;
+				}
+				.project-category__heading {
+					font-size: 1.25rem;
+				}
 			}
 			.featured-work-meta .button {
 				align-self: flex-start;
@@ -707,7 +753,7 @@
 											<img src="images/Lexiflow.png" alt="LexiFlow prototype thumbnail" />
 										</a>
 										<div class="featured-work-meta">
-											<h3><a href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">Integrated research-and-drafting workspace for a legal and tax research platform (Claude Prototype)</a></h3>
+											<h3><a href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">Integrated research-and-drafting workspace for a legal and tax research platform (Claude Artifact)</a></h3>
 											<p>Flags unsupported claims and formats citations the moment you write them, with the relevant authorities surfaced inline. Collapses the "research here, draft there" scramble into one workspace for legal and tax work.</p>
 											<a class="button small primary" href="https://claude.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2" target="_blank" rel="noopener noreferrer">View</a>
 										</div>
@@ -717,7 +763,7 @@
 											<img src="images/Researchflow.png" alt="ResearchFlow prototype thumbnail" />
 										</a>
 										<div class="featured-work-meta">
-											<h3><a href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">Workflow orchestrator for recurring tax and compliance filings (Claude Prototype)</a></h3>
+											<h3><a href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">Workflow orchestrator for recurring tax and compliance filings (Claude Artifact)</a></h3>
 											<p>Turns recurring tax and compliance filings into automated pipelines from intake to delivery, with role-based handoffs. Replaces one-off, ad hoc research with templated, repeatable workflows.</p>
 											<a class="button small primary" href="https://claude.ai/public/artifacts/baacf2c8-becf-4254-8749-ca491ba4ee12" target="_blank" rel="noopener noreferrer">View</a>
 										</div>
@@ -756,6 +802,15 @@
 											<h3><a href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">Purchase Propensity Modeling for ShopNow</a></h3>
 											<p>Scores 30-day purchase propensity, then picks who to target by cost vs. payoff, not model accuracy. <em>(Lasso &rarr; XGBoost)</em></p>
 											<a class="button small" href="https://github.com/Aghil-hub/Purchase-propensity-model" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+										</div>
+									</div>
+									<div class="featured-work-card">
+										<div class="featured-work-thumbnail">
+											<img src="images/projects/sentiment_distribution.png" alt="Spotify and FC Barcelona sentiment distribution preview" />
+										</div>
+										<div class="featured-work-meta">
+											<h3>Spotify &times; FC Barcelona Partnership Impact Analysis (Sentiment Analysis + Event Study)</h3>
+											<p>Measures fan sentiment across Reddit and market response around two key announcements: <strong>the sponsorship deal</strong> and <strong>the Camp Nou rename</strong>. The stadium rename drew heavily negative fan reaction; the market showed a positive directional CAR despite Spotify's high beta amplifying broader market noise. <em>(RoBERTa, OLS Regression)</em></p>
 										</div>
 									</div>
 								</div>
