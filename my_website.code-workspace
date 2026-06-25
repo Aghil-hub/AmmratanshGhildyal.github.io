@@ -1,0 +1,22 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "chat.tools.terminal.autoApprove": {
+            "git remote": true,
+            "git fetch": true,
+            "git rev-parse": true,
+            "/^cd \"c:\\\\Personal Files\\\\Career\\\\Website\\\\AmmratanshGhildyal\\.github\\.io\"; powershell -NoProfile -Command \"try \\{ \\$resp = Invoke-WebRequest -Uri 'https://claude\\.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2' -MaximumRedirection 5 -UseBasicParsing; Write-Output \\$resp\\.StatusCode; Write-Output \\$resp\\.ContentType; \\} catch \\{ Write-Output 'ERROR'; \\$_\\.Exception\\.Message \\}\"$/": {
+                "approve": true,
+                "matchCommandLine": true
+            },
+            "/^cd \"c:\\\\Personal Files\\\\Career\\\\Website\\\\AmmratanshGhildyal\\.github\\.io\"; powershell -NoProfile -Command \"try \\{ \\$resp = Invoke-WebRequest -Uri 'https://claude\\.ai/public/artifacts/ebf83e64-754f-4691-ad1e-76fb030b43e2' -MaximumRedirection 5 -UseBasicParsing -ErrorAction Stop; Write-Output \\$resp\\.StatusCode; Write-Output \\$resp\\.ContentType; Write-Output \\$resp\\.Headers\\.Location; \\} catch \\{ \\$e = \\$_\\.Exception; Write-Output 'ERROR'; Write-Output \\$e\\.Message; if \\(\\$e\\.Response\\) \\{ Write-Output \\$e\\.Response\\.StatusCode\\.Value__; \\} \\}\"$/": {
+                "approve": true,
+                "matchCommandLine": true
+            }
+        }
+    }
+}
